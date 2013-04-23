@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}What is High Energy Astrophysics?}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}How is the High Energy Sky Different?}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}High Energy Photons}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}History}{4}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}X-Ray Spectra and Moseley's Law}{4}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}Detectors}{5}{subsection.1.6}
+\contentsline {paragraph}{Gas Proportional Counters}{6}{section*.2}
+\contentsline {paragraph}{Scintillation Counters}{6}{section*.3}
+\contentsline {paragraph}{Solid State}{6}{section*.4}
+\contentsline {subsection}{\numberline {1.7}Radioactivity}{7}{subsection.1.7}
+\contentsline {subsection}{\numberline {1.8}Energetics}{7}{subsection.1.8}
+\contentsline {section}{\numberline {2}Accretion of Astrophysical Plasmas}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}Spherical Flow of Ionized Material onto Compact Objects}{8}{subsection.2.1}
+<<<<<<< HEAD
+\contentsline {subsection}{\numberline {2.2}A More Detailed Calculation}{10}{subsection.2.2}
+\contentsline {section}{\numberline {3}White Dwarfs}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}White Dwarf Structure}{10}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Equations of State}{11}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Mass-Radius Relation for White Dwarfs}{14}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}The Chandrasekhar Mass}{15}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}White Dwarf Cooling}{16}{subsection.3.3}
+=======
+>>>>>>> 41373642abef7a5d5e778cef1a91b2aed4be7f27
