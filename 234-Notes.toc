@@ -11,14 +11,22 @@
 \contentsline {subsection}{\numberline {1.7}Radioactivity}{7}{subsection.1.7}
 \contentsline {subsection}{\numberline {1.8}Energetics}{7}{subsection.1.8}
 \contentsline {section}{\numberline {2}Accretion of Astrophysical Plasmas}{8}{section.2}
-\contentsline {subsection}{\numberline {2.1}Spherical Flow of Ionized Material onto Compact Objects}{8}{subsection.2.1}
-<<<<<<< HEAD
+\contentsline {subsection}{\numberline {2.1}Spherical Flow onto Compact Objects}{8}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}A More Detailed Calculation}{10}{subsection.2.2}
-\contentsline {section}{\numberline {3}White Dwarfs}{10}{section.3}
-\contentsline {subsection}{\numberline {3.1}White Dwarf Structure}{10}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Equations of State}{11}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Mass-Radius Relation for White Dwarfs}{14}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}The Chandrasekhar Mass}{15}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}White Dwarf Cooling}{16}{subsection.3.3}
-=======
->>>>>>> 41373642abef7a5d5e778cef1a91b2aed4be7f27
+\contentsline {subsection}{\numberline {2.3}Interacting Binaries}{14}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Roche Potentials}{15}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Mass Transfer and Effects on Orbits}{17}{subsubsection.2.3.2}
+\contentsline {section}{\numberline {3}White Dwarfs}{17}{section.3}
+\contentsline {subsection}{\numberline {3.1}Observed Properties of WDs}{18}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}White Dwarf Structure}{19}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Equations of State}{19}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Mass-Radius Relation for White Dwarfs}{22}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}The Chandrasekhar Mass}{23}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}White Dwarf Cooling}{24}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Cataclysmic Varaiables}{26}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Classical Novae}{26}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Recurrent Novae}{27}{subsubsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.3}Dwarf Novae}{27}{subsubsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.4}Magnetic CVs}{27}{subsubsection.3.5.4}
+\contentsline {subsubsection}{\numberline {3.5.5}General Considerations}{27}{subsubsection.3.5.5}
+\contentsline {section}{\numberline {4}Neutron Stars}{28}{section.4}

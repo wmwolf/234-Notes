@@ -8,14 +8,22 @@
 \BOOKMARK [2][-]{subsection.1.7}{Radioactivity}{section.1}% 8
 \BOOKMARK [2][-]{subsection.1.8}{Energetics}{section.1}% 9
 \BOOKMARK [1][-]{section.2}{Accretion of Astrophysical Plasmas}{}% 10
-\BOOKMARK [2][-]{subsection.2.1}{Spherical Flow of Ionized Material onto Compact Objects}{section.2}% 11
-<<<<<<< HEAD
+\BOOKMARK [2][-]{subsection.2.1}{Spherical Flow onto Compact Objects}{section.2}% 11
 \BOOKMARK [2][-]{subsection.2.2}{A More Detailed Calculation}{section.2}% 12
-\BOOKMARK [1][-]{section.3}{White Dwarfs}{}% 13
-\BOOKMARK [2][-]{subsection.3.1}{White Dwarf Structure}{section.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Equations of State}{subsection.3.1}% 15
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Mass-Radius Relation for White Dwarfs}{subsection.3.1}% 16
-\BOOKMARK [2][-]{subsection.3.2}{The Chandrasekhar Mass}{section.3}% 17
-\BOOKMARK [2][-]{subsection.3.3}{White Dwarf Cooling}{section.3}% 18
-=======
->>>>>>> 41373642abef7a5d5e778cef1a91b2aed4be7f27
+\BOOKMARK [2][-]{subsection.2.3}{Interacting Binaries}{section.2}% 13
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Roche Potentials}{subsection.2.3}% 14
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Mass Transfer and Effects on Orbits}{subsection.2.3}% 15
+\BOOKMARK [1][-]{section.3}{White Dwarfs}{}% 16
+\BOOKMARK [2][-]{subsection.3.1}{Observed Properties of WDs}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.2}{White Dwarf Structure}{section.3}% 18
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Equations of State}{subsection.3.2}% 19
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Mass-Radius Relation for White Dwarfs}{subsection.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.3}{The Chandrasekhar Mass}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.4}{White Dwarf Cooling}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.5}{Cataclysmic Varaiables}{section.3}% 23
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Classical Novae}{subsection.3.5}% 24
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Recurrent Novae}{subsection.3.5}% 25
+\BOOKMARK [3][-]{subsubsection.3.5.3}{Dwarf Novae}{subsection.3.5}% 26
+\BOOKMARK [3][-]{subsubsection.3.5.4}{Magnetic CVs}{subsection.3.5}% 27
+\BOOKMARK [3][-]{subsubsection.3.5.5}{General Considerations}{subsection.3.5}% 28
+\BOOKMARK [1][-]{section.4}{Neutron Stars}{}% 29

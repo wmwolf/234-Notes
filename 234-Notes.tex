@@ -127,11 +127,7 @@ fancyhdr}
 			\end{equation*}
 			The nucleus is required to appease conservation laws
 		\end{enumerate}
-<<<<<<< HEAD
 		All three of these have been used to make HE photon detectors since they can generate measurable electrons. To characterize the absorption of photons in a material through some characteristic wavelength $\ell$, we'll assume there is some initial intensity $I$ of HE photons. This intensity if attenuated according to
-=======
-		All three of these have been used to make HE photon detectors. To characterize the absorption of photons in a material through some characteristic wavelength $\ell$, we'll assume there is some initial intensity $I$ of HE photons. This intensity if attenuated according to
->>>>>>> 41373642abef7a5d5e778cef1a91b2aed4be7f27
 		\begin{equation}
 			\label{eq:3} I = I_0 e^{-\left(\frac{\mu}{\rho}\right)\rho \ell}
 		\end{equation}
@@ -188,20 +184,15 @@ fancyhdr}
 		
 		\n Nucleosynthesis, on the other hand, gives about 1 MeV per baryon, equivalent to $10^{18}\ \mathrm{erg/g}$. Note that the greatest gains in nucleosynthesis come from the simplest steps (like hydrogen to helium). Higher burning gives less and less energy, and eventually at Iron, there are no more energy gains to be had. \\
 		
-<<<<<<< HEAD
 		\n Accretion power is more efficient still since it scales as $GM/R$. For the sun, this corresponds to about $2\times 10^{15}\ \mathrm{erg/g}$. One proposed explanation for the energy source for the sun was gravitational contraction. If we take the gravitational energy of the sun and divide by its current luminosity, we get a lifetime on the order of $10^{7}\ \mathrm{years}$-- far too short to account for how long it has been shining on Earth. Quasi-stellar objects (QSOs), on the other hand, are powered by the accretion of matter (not nuclear powered!). We observe them at $L_{\mathrm{QSO}}\sim 10^{47\ \mathrm{erg/s}}$. If this was powered by nuclear reactions, there would need to be about $10^{12}\ \mathrm{M_\odot}$ of matter burned each Gyr to provide the power! Mass estimates for these objects are only as high as $10^{11}$, so they are likely powered by accretion.
-=======
-		\n Accretion power is more efficient still since it scales as $GM/R$. For the sun, this corresponds to about $2\times 10^{15}\ \mathrm{erg/g}$. One proposed explanation for the energy source for the sun was gravitational contraction. If we take the gravitational energy of the sun and divide by its current luminosity, we get a lifetime on the order of $10^{7}\ \mathrm{years}$-- far too short to account for how long it has been shining on Earth. Quasi-stellar objects (QSOs), on the other hand, are powered by the accretion of matter (not nuclear powered!). We observe them at $L_{\mathrm{QSO}}\sim 10^{47\ \mathrm{erg/s}}$. If this was powered by nuclear racations, there would need to be about $10^{12}\ \mathrm{M_\odot}$ of matter burned each Gyr to provide the power! Mass estimates for these objects are only as high as $10^{11}$, so they are likely powered by accretion.
->>>>>>> 41373642abef7a5d5e778cef1a91b2aed4be7f27
 	% subsection energetics (end)
 % section introduction (end)
 \section{Accretion of Astrophysical Plasmas} % (fold)
 \label{sec:accretion_of_astrophysical_plasmas}
-	\subsection{Spherical Flow of Ionized Material onto Compact Objects} % (fold)
+	\subsection{Spherical Flow onto Compact Objects} % (fold)
 	\label{sub:spherical_flow_of_ionized_material_onto_compact_objects}
 		Now we will consider the spherically symmetric accretion of matter onto a compact object. This essentially ignores angular momentum, which will be included at a later time when we discuss accretion disks.\\
 		
-<<<<<<< HEAD
 		\n There is a fundamental limit on the rate at which matter can be accreted, called the \textbf{Eddington Limit}.\\
 		
 		\n\emph{Monday, April 8, 2013}\\
@@ -306,10 +297,238 @@ fancyhdr}
 		\begin{equation}
 			\label{eq:acc:20} \boxed{v\frac{dv}{dr} + \frac{1}{r} \frac{\partial P}{\partial r} + \frac{GM}{r^2} = 0}
 		\end{equation}
+		\emph{Wednesday, April 10, 2013}\\
+		
+		\n We can assume a gas has a polytropic equation of state (eos) where pressure is related to density raised to a power following the form $\gamma = n/(n+1)$ for some (possibly infinite) $n$, called the \textbf{polytropic index}. Specifically, we assume
+		\begin{equation}
+			\label{eq:acc:21} P = K\rho^\gamma = K\rho^{\frac{n}{n+1}}
+		\end{equation}
+		As concrete examples, $\gamma=5/3$ (or $n=3/2$) is the index for an adiabatic, monatomic gas (yes, \emph{that} gamma), and $\gamma=1$ (or $n\to \infty$) is that for an isothermal ideal gas (reduction in the ideal gas law). The form of the ideal gas law that we'll use is
+		\begin{equation}
+			\label{eq:acc:22} T = \frac{\mu m_H P}{\rho k}
+		\end{equation}
+		where $\mu$ is the mean molecular weight, which is the mean mass per particle (electrons, nuclei, atoms, etc.) measure in amu, assuming $m_H\sim \mathrm{amu}$. Mathematically, we can write $\mu$ via
+		\begin{equation}
+			\label{eq:acc:23} \mu = \frac{\rho}{n m_p}
+		\end{equation}
+		So that for pure, ionized hydrogen we have $mu = 0.5$ (each atom splits into an electron and proton, so the mass for every two particles is $m_p$). For pure molecular hydrogen, H$_2$, then, we have $\mu = 2$.\\
+		
+		\n We can rewrite hydrostatic equilibrium in terms of a sound speed, $c_s^2 = dP/dr$:
+		\begin{equation}
+			\label{eq:acc:24} \frac{dP}{dr} = \frac{dP}{d\rho}\frac{d\rho}{dr} = c_s^2\frac{d\rho}{dr}
+		\end{equation}
+		Note that implicitly $c_s^2$ is a function of $r$. Now we rewrite eq.~\eqref{eq:acc:20} as
+		\begin{equation}
+			\label{eq:acc:25} v\frac{dv}{dr} + \frac{c_s^2}{\rho}\frac{d\rho}{dr} + \frac{GM}{r^2} = 0
+		\end{equation}
+		Now we'd like to get a handle on the term $\rho^{-1}d\rho/dr$. Recall that through the equation of continuity, $\partial_r(r^2\rho v)=0$. Expanding this result, we have
+		\begin{equation}
+			\label{eq:acc:26} \rho\frac{\partial}{\partial r}(r^2v) + r^2 v\frac{\partial\rho}{\partial r} = 0
+		\end{equation}
+		Dividing both sides by $\rho r^2 v$, we get the useful expression
+		\begin{equation}
+			\label{eq:acc:27} \frac{1}{\rho}\frac{\partial\rho}{\partial v} = -\frac{1}{r^2v}\frac{\partial}{\partial r}(r^2v)
+		\end{equation}
+		Substituting this into eq.~\eqref{eq:acc:25} to get
+		\begin{align}
+			\label{eq:acc:28} \frac{1}{2}\frac{\partial}{\partial r}(v^2) + c_s^2\left( -\frac{1}{r^2v} \frac{\partial}{\partial r} (r^2v)\right) + \frac{GM}{r^2} &= 0\\
+			\label{eq:acc:29} \frac{1}{2}\frac{\partial}{\partial r}(v^2) - \frac{c_s^2}{r^2v}\left( 2rv + r^2 \frac{\partial v}{\partial r} \right) + \frac{GM}{r^2} &= 0\\
+			\label{eq:acc:30} \frac{1}{2}\frac{\partial}{\partial r} v^2 - \frac{c_s^2}{v^2}\frac{1}{2} \frac{\partial}{\partial r} v^2 &= -\frac{GM}{r^2} + \frac{2c_s^2}{r}\\
+			\label{eq:acc:31} \frac{1}{2} \left(1-\frac{c_s^2}{v^2}\right) \frac{\partial}{\partial r}v^2 &= -\frac{GM}{r^2} \left(1 - \frac{2c_s^2 r}{GM}\right)
+		\end{align}
+		This final form is known as the \textbf{Parker Wind Equation} because Parker used it to describe the solar wind. In fact, this can be used to describe an outflowing wind as well as inflowing spherical accretion. \\
+		
+		\n Let's examine the near (small $r$) and far (large $r$) regimes in this equation. For the far case on the right hand side of eq.~\eqref{eq:acc:31}, we'll let $c_s\to c_s(\infty)$ at large distances (which also mandates that it be positive). On the left hand side, we would like $v(\infty)\to 0$. Or, as we move away, we want the velocity to steadily decrease, meaning $\partial_r(v^2)<0$. At large $r$, we certainly know that the flow is subsonic ($v^2<c_s^2$). So we define $r_s$ as the radius at which $1 - 2c_s^2r/(GM)=0$, or
+		\begin{equation}
+			\label{eq:acc:32} \boxed{r_s = \frac{GM}{2c_s^2}}
+		\end{equation}
+		Which is the so-called ``sonic point''. For $r<r_s$, the right hand side is negative, which then implies that ($1-c_s^2/v^2$) is \emph{negative} and the flow is supersonic. Between these two regimes, the LHS must vanish, where $v_s^2=c_s^2$ or $\partial_r v^2=0$ at the sonic point. Possible wind solutions are sketched in Figure~\ref{fig:acc:1}.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width = 0.6\textwidth]{figures/sonic_point.pdf}
+			\caption{Possible wind solutions from the Parker wind equation. The curve labeled with a circled 1 is the case of accretion, where matter is subsonic past the sonic point and supersonic within. In this case, we expect freefall within the sonic point. The case marked with a circled 2 models a stellar wind, which is inverted.}
+			\label{fig:acc:1}			
+		\end{figure}
+		Now we'll return to the Euler equation and integrate it:
+		\begin{equation}
+			\label{eq:acc:33} \frac{v^2}{2}+\int \frac{dP}{\rho} - \frac{GM}{r} = \mathrm{const}
+		\end{equation}
+		Using our polytropic equation of state, we can express the pressure differential as
+		\begin{equation}
+			\label{eq:acc:34} dP = K\gamma\rho^{\gamma-1}\,d\rho \qquad \Rightarrow \qquad c_s^2 = K\gamma\rho^{\gamma-1} = \frac{\gamma P}{\rho}
+		\end{equation}
+		where we've utilized the definition of the sound speed to clean things up. Now eq.~\eqref{eq:acc:33} becomes
+		\begin{equation}
+			\frac{v^2}{2} + \frac{c_s^2}{\gamma-1} - \frac{GM}{\gamma} = \mathrm{const}
+		\end{equation}
+		This latest form is often referred to as the \textbf{Bernoulli integral}. Now we need to look at the boundary conditions. Specifically, we know that $v^2$ vanishes as $r\to\infty$, so the constant must be 
+		\begin{equation}
+			\label{eq:acc:35} \mathrm{const} = \frac{\left[c_s(\infty)\right]^2}{\gamma-1}
+		\end{equation}
+		Additionally, we know that at $r=r_s$, $v = c_s$, so we may simplify to
+		\begin{equation}
+			\label{eq:acc:36} c_s^2(r_s)\left[\frac{1}{2}+\frac{1}{\gamma-1} - 2 \right] = \frac{cs^2(\infty)}{\gamma-1}
+		\end{equation}
+		with this solution at hand, we can solve for the sound speed at the sonic point:
+		\begin{equation}
+			\label{eq:acc:37} c_s(r_s) = c_s(\infty)\left(\frac{2}{5-3\gamma}\right)^{1/2}
+		\end{equation}
+		Now we can return to our equation for the accretion rate in steady state:
+		\begin{equation}
+			\label{eq:acc:38} \dot{M} = 4\pi r^2 \rho(-v) = 4\pi r_s^2\rho(r_s)c_s(r_s)
+		\end{equation}
+		Recall though that $c_s^2\propto \rho^{\gamma-1}$. Then we also know $c_s^2(r_s)/c_s^2(\infty) = \rho(r_s)^{\gamma-1}/\rho(\infty)^{\gamma-1}$. Doing the algebra, this gives the density at the sonic point as
+		\begin{equation}
+			\label{eq:acc:39} \rho(r_s) = \rho(\infty)\left[\frac{c_s(r_s)}{c_s(\infty)}\right]^{2/(\gamma-1)}
+		\end{equation}
+		Doing all the substitutions, we get an accretion rate of
+		\begin{equation}
+			\label{eq:acc:40} 
+			\boxed{\dot{M} = \pi G^2 M^2 \frac{\rho(\infty)}{c_s^3(\infty)} \left[ \frac{2}{5-3\gamma}\right ]^{\frac{5-3\gamma}{2(\gamma-1)}}}
+		\end{equation}
+		This is the main result of Bondi accretion. Note that the term in the brackets is unity for $\gamma = 5/3$ and  $e^{3/2}\approx 4.5$ for $\gamma = 1$. Bondi-Hoyle-Lyttleton accretion is where movement $v(\infty)$ of the body with respect to the gas is $\sqrt{c_s^2(\infty) + v^2(\infty)}$ which gives an accretion rate of
+		\begin{equation}
+			\label{eq:acc:41} \dot{M} = 4\pi G^2 M^2 \frac{\rho(\infty)}{\left[c_s^2(\infty) + v(\infty)^2\right]^{3/2}} \left[\frac{2}{5-3\gamma}\right]^{\frac{5-3\gamma}{2(\gamma-1)}}
+		\end{equation}
+		So the overall result is the same as our simple result from earlier, but the prefactors are right now and we can account for motion of the central body within the accreting medium.\\
+		
+		\n There are, however, some limitations to this theory. There is some fine tuning required depending on the exact boundary conditions. In reality, shocks are expected. Secondly, this theory assumes no heat transport, which is likely not valid on long enough timescales. Thirdly, it is assumed that the accreting material does not radiate, which can become quite important at small distances. Finally, we've assume perfect spherical symmetry and zero angular momentum. Still, though, this basic theory gives us a simple view into the theory of accretion.
+		
 	% subsection a_more_detailed_calculation (end)
+	
+	\subsection{Interacting Binaries} % (fold)
+	\label{sub:interacting_binaries}
+	The majority of high energy stellar-mass phenomena are interacting binaries. These include cataclysmic variables (CVs), Algol systems, W UMa, low mass X-Ray binaries, type Ia Supernovae. If we have two stars of mass $m_1$ and $m_2$, Kepler's third law tells us that their period is given by
+	\begin{equation}
+		\label{eq:binaries:1} P^2 = \frac{4\pi^2a^3}{G(m_1+m_2)}
+	\end{equation}
+	where $a$ is the semi-major axis of the orbit. Given enough time, tidal forces will act to circularize the orbit, and if so, $a$ is just the simple separation between the two stars (where $e$, the eccentricity, vanishes). A schematic of such a binary is shown in Figure~\ref{fig:binaries:1}.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width = 0.4\textwidth]{figures/interacting_binary.pdf}
+		\caption{Schematic of an interacting binary. Stars 1 and 2 orbit about their center of mass as radii $a_1$ and $a_2$, respectively. An observer views this from an angle $i$ with $i=0$ giving a face-on view and $i=90^\circ$ giving an edge-on view.}
+		\label{fig:binaries:1}
+	\end{figure}
+	Regarding the situation shown in Figure~\ref{fig:binaries:1}, we have $a = a_1+a_2$. Kepler's laws mandate $m_1a_1 = m_2a_2$. For convenience, we'll define $M=m_1 + m_2$. Then we can solve for an individual orbital radius of, say, star 1: $a_1/a = m_2/M$. If we can measure (spectroscopically or otherwise) the maximum velocity in the orbit, it will have first been modulated by our viewing angle. Specifically,
+	\begin{equation}
+		\label{eq:binaries:2} v_1 = v_{1,\mathrm{true}}\sin i = \left(\frac{2\pi}{P}\right)a_1\sin i
+	\end{equation}
+	for further convenience, we define the \textbf{mass function} via
+	\begin{equation}
+		\label{eq:binaries:3} f_1(m_1, m_2, i) \equiv \frac{(m_2\sin i)^3}{(m_1+m_2)^2} = \frac{Pv_1^3}{2\pi G}
+	\end{equation}
+	Define $q = m_1/m_2$ so that $M/m_2 = 1+q$. Then the mass function becomes
+	\begin{equation}
+		\label{eq:binaries:4} f_1(m_2, i, q) = \frac{m_2(\sin i)^3}{(1+q)^2}
+	\end{equation}
+	Using this all to solve for the semi-major axis $a$, we get
+	\begin{equation}
+		\label{eq:binaries:5} \boxed{a = 3\times 10^{11}\ \mathrm{cm}\ \left(\frac{m_2}{M_\odot}\right)^{1/3}(1+q)^{1/3}P^{2/3}}
+	\end{equation}
+	In general, $f_1 < m_2$ since $(sin i)^3 \leq 1$ and $(1+q)^{-2} < 1$. If the source is double-lined, then we can measure velocities from both stars. In this case, the mass ratio is simply
+	\begin{equation}
+		\label{eq:binaries:6} q = \left(\frac{f_2}{f_1}\right)^{1/3}
+	\end{equation}
+	\subsubsection{Roche Potentials} % (fold)
+	\label{ssub:roche_potentials}
+		To deal with the equipotential surfaces of such binaries, we first define the angular velocity vector, given by
+		\begin{equation}
+			\label{eq:binaries:7} \bm{\Omega} = \sqrt{\frac{GM}{a^3}}\,\hat{z}
+		\end{equation}
+		In the co-rotating frame (where the stars are at rest), the potential has two terms: a gravitational potential and a centrifugal potential. The overall potential is then given by
+		\begin{equation}
+			\label{eq:binaries:8} \Phi = \Phi_{\mathrm{G}} + \Phi_\Omega = -\frac{Gm_1}{\norm{\mathbf{r}-\mathbf{r}_1}} - \frac{G m_2}{\norm{\mathbf{r}-\mathbf{r}_2}} - \frac{1}{2}(\bm{\Omega}\times \mathbf{r})^2
+		\end{equation}
+		Where here, the coordinate system has the center of mass of the binary at its origin and, again, it is co-rotating with the binary. Near each star, the potential is like the circular potential of the isolated star, and very far away, the potential is like that from a point source at the center of mass. In the intermediary stages, though, tear-dropped contours form for the equipotential surfaces. An example of such equipotential contours from a binary system is shown in Figure~\ref{fig:binaries:2}.
+		\begin{figure}[ht]
+			\centering
+			\includegraphics[width=0.6\textwidth]{figures/roche_potentials.pdf}
+			\caption{Equipotentials for a binary star system. Those contours closest to the stars resemble spherical potentials about an individual star, and those furthest away resemble contours from a point mass located at the center of mass. The intermediate regime shows distorted shapes resulting from competition between the two stars. Also shown are the Lagrange points as discussed in the text.}
+			\label{fig:binaries:2}
+		\end{figure}
+		There are three main configurations for a binary system with respect to these Roche potentials. A \textbf{detached} binary has both stars situated fully within their Roche lobes (within the potential with $L_1$ in it). A \textbf{semi-detached} binary has one star with a radius that exceeds its Roche lobe. Finally, a \textbf{contact binary} has both stars exceeding their Roche lobe, forming a ``common envelope''. $L_1$, or the inner Lagrange point, is a saddle point. That is, it is a point of quasi-stable equilibrium. It is a maximum in the potential in the $x-$direction and a minimum in the $y$-direction. If expansion proceeds beyond $L_2$ or $L_3$ (which are also saddle points), then mass is lost from the system. $L_4$ and $L_5$ are also local maxima and are thus unstable. These considerations also apply to non-stellar binaries like the Earth and the sun. For instance, WMAP is currently located at $L_2$, and JWST will (hopefully) soon join it. This allows them to be beyond Earth's shadow so they can use solar panels.\\
+		
+		\n For now, let's assume $m_1>m_2$, and define $R_1$, $R_2$ as the radii of spheres with the radius of the Roche lobe. Remember that $q = m_1/m_2$ (in our definition, it may vary depending on the book you are reading). Furthermore, define $b_1$ and $b_2$ to be the distances from each star to $L_1$. In 1983, Eggleton developed an approximation for the Roche lobe radius:
+		\begin{equation}
+			\label{eq:binaries:9} \frac{R_2}{a} = \frac{0.49 q^{-2/3}}{0.6 q^{-2/3}+ \ln (1+q^{-1/3})}
+		\end{equation}
+		For example, if $q=10$, then $R_2/a \approx 0.21$. If we instead wanted to write this explicitly in terms of the masses, then we get
+		\begin{equation}
+			\label{eq:binaries:10} \frac{R_2}{a} = 0.462\left(\frac{m_2}{m_1+m_2}\right)^{1/3} = 0.462\left(1+q\right)^{-1/3}
+		\end{equation}
+		but only for the limited range $1.25\leq q \leq 10$. This gives the same result for $q = 10$, though. There is also a semi-analytic approximation for $b_1$, which is the distance from $L_1$ to the primary, $m_1$:
+		\begin{equation}
+			\label{eq:binaries:11} \frac{b_1}{a} = 0.500 + 0.227\log_{10} q
+		\end{equation}
+		Now if we consider the case where $m_2$ is overflowing its own Roche lobe, we can calculate the average density inside the Roche lobe by using the orbital period:
+		\begin{equation}
+			\label{eq:binaries:12} \avg{\rho_2} = \frac{3m_2}{4\pi R_2^3} = \frac{3}{4\pi(0.462)^3a^3}M = \frac{\pi M}{4\pi^2 a^3} = \frac{\pi}{(0.462)^3G P^2}
+		\end{equation}
+		where we've used Kepler's law to eliminate the semi-major axis. Scaling this result, we get
+		\begin{equation}
+			\label{eq:binaries:13} \avg{\rho_2} \sim 115 \left(\frac{P}{\mathrm{hr}}\right)^{-2}\ \mathrm{g\ cm^{-3}}
+		\end{equation}
+		So for binaries with a period of a few hours, those stars with mean densities typical of the lower main sequence with $\avg{\rho}\sim 1 - 100\ \mathrm{g\ cm^{-3}}$ can fill their Roche lobes.
+	% subsubsection roche_potentials (end)
+	\subsubsection{Mass Transfer and Effects on Orbits} % (fold)
+	\label{ssub:mass_transfer_and_effects_on_orbits}
+		Before we concluded that for $i,j$ = $1,2$ and $i\neq j$, 
+		\begin{equation}
+			\label{eq:binaries:14} a_i = \frac{a m_j}{M}
+		\end{equation}
+		Now the total angular momentum, using the binary's angular frequency, $\omega = 2\pi / P$, is given by
+		\begin{equation}
+			\label{eq:binaries:15} J = m_1a_1^2 \omega + m_2 a_2^2 \omega + I \omega_1 + i\Omega_2
+		\end{equation}
+		where we are assuming that $I \ll a^2 m$ (the moment of inertia). Dropping those terms and eliminating the orbital radii in favor of masses and the overall semi-major axis, we can get
+		\begin{align}
+			\label{eq:binaries:16} J &= m_1 a_1^2\omega + m_2 a_2^2\omega\\
+			\label{eq:binaries:17} &= \frac{m_2m_1^2a^2}{M^2}\omega + \frac{m_1^2m_2 a^2}{M^2}\omega = \frac{a^2m_1m_2M}{M^2}\omega\\
+			\label{eq:binaries:18} &= \frac{m_1m_2}{M}a^2\omega
+		\end{align}
+		Now if we assume that no mass is lost and no angular momentum is lost (essentially assuming a stream of matter between the two stars with no mass lost along the way), then we have $\dot{m_1} = -\dot{m_2}$ and $\dot{J} = 0$. The effect this has on the period is then
+		\begin{equation}
+			\label{eq:binaries:19} \frac{\dot{P}}{P} = \frac{3\dot{M}(m_1-m_2)}{m_1m_2}
+		\end{equation}
+		
+	So if the heavier star losses mass, the period decreases, and since $P\propto a^{3/2}$, the orbital separation must also decrease, causing runaway mass transfer (since the Roche lobe shrinks as mass is lost). On the other hand, if the lighter star loss mass, both the period and the orbital separation will increase.\\
+	
+	\n Often a fraction of the mass lost from one star will be completely lost from the system. This is a common consequence of spherical mass winds. This is called non-conservative mass loss. Let's assume for now that $\dot{m}_1 = 0$ but $\dot{m}_2 \neq 0$. Then the angular momentum loss is
+	\begin{equation}
+		\label{eq:binaries:20} \dot{J} = \dot{m}_2 a_2^2 \omega
+	\end{equation}
+	and the orbital separation and period both increase according to
+	\begin{equation}
+		\label{eq:binaries:21} \frac{\dot{a}}{a} = -\frac{\dot{m}_2}{M} \qquad \Rightarrow \qquad \frac{\dot{P}}{P} = -\frac{2\dot{m_2}}{M}
+	\end{equation}
+	% subsubsection mass_transfer_and_effects_on_orbits (end)
+	% subsection interacting_binaries (end)
 	% section accretion_of_astrophysical_plasmas (end)
 	\section{White Dwarfs} % (fold)
 	\label{sec:white_dwarfs}
+	The first discovered white dwarf (WD) was discovered in 1783 by William Herschel. It was discovered in a triple system consisting of 40 Eri A, 40 Eri B, and 40 Eri C. 40 Eri B was the WD what was observed, though it was not well understood at the time. Much later in 1914, Russel (of the Herzprung-Russel diagram) identified the spectrum of 40 Eri B as an A star (taken in 1910). Note that 40 Eri B is not the closest WD, but it is the most easily observed.\\
+	
+	\n The next WD discovered was Sirius B, which was suspected astrometrically by Bessel as early as 1844. This is because there was an observed departure from linear motion of Sirius A (the really bright star). He wrote in 1844 \begin{quote} The existence of numberless visible stars can prove nothing against the existence of numberless invisible ones. \end{quote} Sirius B was first observed in 1862 by Alvan Graham Clark, and in 1915, Walter Adams obtained a spectrum, declaring that it was both faint and white. Later in 1928, he detected a gravitational redshift in this spectrum, which was actually the first test of GR. He concluded that it was 2000 times denser than platinum.\\
+	
+	\n In 1927, Eddington mused about Sirius B \begin{quote} The message of Sirius, when it was decoded ran, ``I am composed of material 3,000 times denser than anything you have ever come across; a ton of my material would be a little nugget you could put in a match box.'' What reply can be made of a such a message? The reply most of us made in 1914 was, ``Shut up. Don't talk nonsense.'' \end{quote}
+	It wasn't until 1917 that the first isolated WD was discovered van Maanan's star. No new ones were discovered until the 1930's.
+	\subsection{Observed Properties of WDs} % (fold)
+	\label{sub:observed_properties_of_wds}
+	We can break WDs up into classes according to different spectroscopic properties. Each of the classes begin with a ``D'', designating dwarf.
+	\begin{itemize}
+		\item DA stars show strong hydrogen lines. These constitute about 2/3 of all WDs.
+		\item DB stars show strong He I lines, making up about 8\% of all WDs.
+		\item DO stars show strong He II lines, making up about 14\% of all WDS.
+		\item DC stars show no strong lines and are relatively rare ($\sim 1\%$)
+		\item DZ stars show strong metal lines but no carbon. These are also pretty rare.
+		\item DQ stars show strong carbon lines, and they make up about 0.1\% of all WDs.
+	\end{itemize}
+	These spectroscopic classes also show variety in their effective temperatures. DO stars have $T_{\mathrm{eff}}\approx 100,000\ \mathrm{K} - 45,000\ \mathrm{K}$. DB stars are a bit cooler at $30,000\ \mathrm{K} - 12,000\ \mathrm{K}$. DC stars are even cooler, typically less than $12,000\ \mathrm{K}$. DQ stars are typically warmer than 15,000 K.\\
+	
+	\n The typical mass of a WD is around $0.5-0.6\ M_\odot$ with surface gravities of around $\log g \approx 8.0$. Some of these are variable. ZZ Ceti variables are WDs with $T_{\mathrm{eff}}\approx 12,000\ \mathrm{K}$ with pulsational periods of $P\sim 100 - 1000\ \mathrm{s}$. There are also variable DA stars (DAVs) that exhibit nonradial pulsations that are driven by partial ionization of the hydrogen in their atmospheres. DBV stars act similarly due to partial helium ionization zones at $T_{\mathrm{eff}}\sim 27,000\ \mathrm{K}$. There are also planetary nebula variables (PNNVs) that are present right after the birth of a WD.\\
+	
+	\n Most WDs are largely composed of carbon and oxygen (C-O WDs), though there are also lower-mass pure He WDs. On the higher end of the mass scale, there are Oxygen-Neon (O-Ne) WDs, but most have hydrogen in their atmospheres. Due to the intense surface gravity, there is thorough surface stratification. That is, there is nearly pure hydrogen on the surface with heavier elements sinking to the lower levels. As a result, DA WDs dominate the population since even a small amount of hydrogen will form a nearly pure layer at the top.
+	% subsection observed_properties_of_wds (end)
 	\subsection{White Dwarf Structure} % (fold)
 	\label{sub:white_dwarf_structure}
 		We'll begin by discussing some macroscopic equations governing pressure and density in white dwarfs. Recall that a white dwarf is just the degenerate core of an old star that is so dense that the pressure is due nearly entirely to electron degeneracy pressure. As a result of this, pressure is independent of temperature. Mass conservation tells us that
@@ -332,7 +551,7 @@ fancyhdr}
 		\begin{equation}
 			\label{eq:wd_struc:4} n = \frac{3N}{4\pi R^3}
 		\end{equation}
-		where $R$ is the size of the star. The average spacing of the particles is then $\Delta x \approx n{-1/3}$. Heisenberg's uncertainty principle tells us 
+		where $R$ is the size of the star. The average spacing of the particles is then $\Delta x \approx n^{-1/3}$. Heisenberg's uncertainty principle tells us 
 		\begin{equation}
 			\label{eq:wd_struc:5} \Delta x \Delta p \sim \hbar \qquad \Rightarrow \qquad \Delta p \sim \frac{\hbar}{\Delta x} \approx \hbar n^{1/3}
 		\end{equation}
@@ -340,9 +559,9 @@ fancyhdr}
 		\begin{equation}
 			\label{eq:wd_struc:6} E^2 = p^2c^2 + m^2c^4
 		\end{equation}
-		If we assume $pc > mc^2$, we get an internal energy of (using our momentum relation from above)
+		If we assume $pc > mc^2$ (the ultra-relativistic limit), we get an internal energy of (using our momentum relation from above)
 		\begin{equation}
-			\label{eq:wd_struc:7} E_i \approx pc = \hbar c\left(frac{3N}{4\pi R^3}\right)^{1/3} = \hbar c\left(\frac{3}{4\pi}\right)^{1/3}\frac{N^{1/3}}{R}
+			\label{eq:wd_struc:7} E_i \approx pc = \hbar c\left(\frac{3N}{4\pi R^3}\right)^{1/3} = \hbar c\left(\frac{3}{4\pi}\right)^{1/3}\frac{N^{1/3}}{R}
 		\end{equation}
 		The gravitational energy per fermion of such a uniform density ball would be
 		\begin{equation}
@@ -350,13 +569,13 @@ fancyhdr}
 		\end{equation}
 		where $M = N m_{\mathrm{particle}}$. The the total energy (the sum of the two) is 
 		\begin{equation}
-			\label{eq:wd_struc:9} E_{\mathrm{tot}} = E_i + E_G = \frac{!}{R}\left(\hbar c\left(\frac{3}{4\pi}\right)^{1/3}N^{1/3} - \frac{3}{5}G Nm_{\mathrm{particle}}\right)
+			\label{eq:wd_struc:9} E_{\mathrm{tot}} = E_i + E_G = \frac{1}{R}\left(\hbar c\left(\frac{3}{4\pi}\right)^{1/3}N^{1/3} - \frac{3}{5}G Nm_{\mathrm{particle}}\right)
 		\end{equation}
 		We find equilibrium when there is no energy gradient, $\partial E/\partial r = 0$ when the right hand side vanishes: 
 		\begin{align}
 			\label{eq:wd_struc:10} \left(\frac{3}{4\pi}\right)^{1/3}N^{1/3}\hbar c &= \frac{3}{5}GNm_{\mathrm{particle}} \\
 			\label{eq:wd_struc:11} N^{2/3} &= \frac{\left(\frac{3}{4\pi}\right)^{1/3}\hbar c}{\frac{3}{5}Gm_{\mathrm{particle}}} \\
-			\label{eq:wd_struc:12} N_{\mathrm{critical}} &= \frac{ \left(\frac{3}{4\pi}\right)^{1/2}\left(\hbar c\right)^{3/2}\left(\frac{5}{3}\right)^{3/2} }{ G^{2/3}m_{\mathrm{particle}}^{3/2}}\\
+			\label{eq:wd_struc:12} N_{\mathrm{critical}} &= \frac{ \left(\frac{3}{4\pi}\right)^{1/2}\left(\hbar c\right)^{3/2}\left(\frac{5}{3}\right)^{3/2} }{ G^{3/2}m_{\mathrm{particle}}^{3/2}}\\
 			\label{eq:wd_struc:13} &= \left(\frac{3}{4\pi}\frac{5}{3}\right)^{1/2}\frac{5}{3}\left(\frac{\hbar c}{G m_{\mathrm{particle}}}\right)^{3/2}\\
 			\label{eq:wd_struc:14} &= \frac{5\sqrt{5}}{6\sqrt{\pi}}\left(\frac{\hbar c}{Gm_{\mathrm{particle}}}\right)^{3/2}\\
 			\label{eq:wd_struc:15} &= 2.3\times 10^{57}\,\mathrm{particles}
@@ -365,7 +584,7 @@ fancyhdr}
 		\begin{equation}
 			\label{eq:wd_struc:16} M_{\mathrm{max}} = N_{\mathrm{crit}} * m_{\mathrm{particle}} = 1.05 \left(\frac{\hbar c}{G}\right)^{3/2}m_{\mathrm{particle}}^{-2}\sim 1.9\,M_\odot
 		\end{equation}
-		There have been a lot of approximations here, so now we'll do a more detailed calculation.\\
+		There have made a lot of approximations here, so now we'll do a more detailed calculation.\\
 		
 		\n We'll still assume that the average spacing between particles is given by $\Delta x \sim n^{-1/3}$. For degeneracy pressure to be the dominant source of support, we must be in the regime where
 		\begin{equation}
@@ -493,7 +712,7 @@ fancyhdr}
 		\begin{equation}
 			\label{eq:wd_struc:43} M = 4\pi \rho_c\int_0^R w^n r^2\,dr = 1.437\,M_\odot\,(2Y_e)^2
 		\end{equation}
-		The radial coordinate is then
+		where the second expression is in the relativistic limit, i.e., the Chandrasekhar Mass. The radial coordinate is then
 		\begin{equation}
 			\label{eq:wd_struc:44} R = 3.347\times 10^9\left(\frac{\rho_c}{10^6\ \mathrm{g/cm^3}}\right)^{-1/3}\left(2Y_e\right)^{3/2}\ \mathrm{cm}
 		\end{equation}
@@ -582,11 +801,100 @@ fancyhdr}
 	\end{equation}
 	
 	% subsection white_dwarf_cooling (end)
+	\subsection{Cataclysmic Varaiables} % (fold)
+	\label{sub:cataclysmic_varaiables}
+	\emph{Wednesday, April 24, 2013}\\
+	
+	\n A \textbf{cataclysmic variable} (CV) is a binary system typically consisting of either a main sequence (MS) or red giant (RG) and a white dwarf (WD) with the MS/RG star overflowing its Roche lobe (RLOF for Roche Lobe OverFlow) and donating matter to the WD. These binaries typically have periods of 80 minutes to several hours. CVs give off radiation from several sources
+	\begin{itemize}
+		\item Secondary (MS/RG)
+		\item Accretion Disk
+		\item Bright spot where accreted material hits disk
+		\item WD surface
+	\end{itemize}
+	Different sources are relevant for different types of CVs, which we'll now summarize.
+	
+	\subsubsection{Classical Novae} % (fold)
+	\label{ssub:classical_novae}
+	A classical nova (CN) has a rapid rebrightening of 6 to 19 magnitudes in the optical. We only see one of these outbursts (as opposed to a recurrent nova, which we'll discuss later). Our current understanding of what causes these events is the accumulation of hydrogen on a WD, followed by ignition at the base in degenerate conditions. As the hydrogen burns to helium, the temperature grows at constant pressure (due to the degenerate nature of the material, which doesn't care about the temperature). This causes a runaway which results in removing a lot of the hydrogen-rich material. We expect there to be about 30 of these each year in the Milky Way, though we may not see most of them due to dust extinction.\\
+	
+	\n During an outburst, CNe reachs the Eddington luminosity, at which point the hydrogen rich material is blown off of the surface with wind velocities on the order of 1000 km/s over a timescale of days to weeks. Recall that the Eddington luminosity
+	\begin{equation}
+		\label{eq:cv:1} L_{\mathrm{Edd}} \sim 1.34\times 10^{38}\ \left(\frac{M}{M_\odot}\right)\ \mathrm{erg\ s^{-1}} \sim 10^{38}\ \mathrm{erg\ s^{-1}}
+	\end{equation}
+	Then the total radiated energy is approximately
+	\begin{equation}
+		\label{eq:cv:2} E_{\mathrm{tot}} = L_{\mathrm{Edd}}\Delta t \sim 10^{45}\ \mathrm{erg}
+	\end{equation}
+	which corresponds to approximately $10^{-7}\ M_\odot$ of hydrogen burned to helium. At an accretion rate of $\dot{M}\sim 10^{-10}\ M_\odot/\mathrm{yr}$, we would expect these to go off about every 1000 years (so not recurrent on our timescales).\\
+	
+	% subsubsection classical_novae (end)
+	\subsubsection{Recurrent Novae} % (fold)
+	\label{ssub:recurrent_novae}
+		Recurrent novae are very similar to classical novae, but they reoccur on timescales of decades. These explosions are less violent, causing less mass loss. This is likely because the ignition takes place when the material is still nondegenerate.
+	% subsubsection recurrent_novae (end)
+	\subsubsection{Dwarf Novae} % (fold)
+	\label{ssub:dwarf_novae}
+	A dwarf novae is a rebrightening of around 2 to 5 magnitudes, thought to be linked with accretion. An instability in the accretion disk causes a short increase in the accretion rate, resulting in an increase in brightness. These events can occur with recurrence times on the order of days to weeks or longer. A dwarf nova (while active) has a luminosity of approximately $L\sim 10^{34}\ \mathrm{erg\ s^{-1}}$.\\
+	
+	% subsubsection dwarf_novae (end)
+	\subsubsection{Magnetic CVs} % (fold)
+	\label{ssub:magnetic_cvs}
+	Magnetic CVs are accreting WDs with very strong magnetic fields ($\sim 10^7\ \mathrm{Gauss}$) where the accreted matter is funneled to the magnetic poles. They have a high state and a low state of emission. A classic example of these is T Cor Bor, which consists of a giant and a magnetized WD, which exhibits recurrent high states.
+	% subsubsection magnetic_cvs (end)
+	\subsubsection{General Considerations} % (fold)
+	\label{ssub:general_considerations}
+	\n Let's look at the orbital dynamics of such system. Kepler's Third Law (with some sensible scaling) is
+	\begin{equation}
+		\label{eq:cv:3} a = \left(3.5\times 10^{10}\ \mathrm{cm}\right)\left(\frac{P}{\mathrm{hr}}\right)^{2/3} \left(\frac{M}{M_\odot}\right)^{1/3}
+	\end{equation}
+	For reference, a solar radius is $R_\odot = 7\times 10^{10}\ \mathrm{cm}$ and for a WD, $R_{\mathrm{WD}}\sim 5\times 10^{8}\ \mathrm{cm}$, so these are very tight binaries!\\
+	
+	\n At the innermost region of an accretion disk, there is a boundary layer where the material first ``enters'' the WD. From the virial theorem, we can assume that the material passing through this boundary layer has half of its energy radiated away and half enters the star as heat. The accretion luminosity is
+	\begin{equation}
+		\label{eq:cv:4} L = \frac{GM_{\mathrm{WD}}\dot{M}}{R_{\mathrm{WD}}}
+	\end{equation}	
+	Half of this is radiated away and appears as radiation from the disk
+	\begin{equation}
+		\label{eq:cv:5} L_{\mathrm{disk}} = L_{\mathrm{BL}} \sim \frac{GM_{\mathrm{WD}}\dot{M}}{2 R_{\mathrm{WD}}}
+	\end{equation}
+	If we assume some characteristic values of $R_{\mathrm{WD}}=6\times 10^{8}\ \mathrm{cm}$, $M_{\mathrm{WD}}= M_\odot$, and $\dot{M} = 1.6\times 10^{-10}\ M_\odot\ \mathrm{yr}$, we get an accretion luminosity of $L\sim 10^{33}\ \mathrm{erg\ s^{-1}}$. Assuming a perfect blackbody is generating this luminosity (and that the energy is radiating away from both sides of the disk), we can use the Stefan-Boltzmann law to solve for a characteristic temperature:
+	\begin{equation}
+		\label{eq:cv:6} 2\pi R_{\mathrm{disk}}^2\sigma T_{\mathrm{out}}^4 \approx \frac{GM_{\mathrm{WD}}\dot{M}}{ R_{\mathrm{WD}} }
+	\end{equation}
+	Using $R_{\mathrm{disk}}=4\times 10^{10}\ \mathrm{cm}$ and our previous assumptions, we get $T_{\mathrm{disk}}\approx 2\times 10^3\ \mathrm{K}$.\\
+	
+	\n Now, if all of the radiation comes from the inner radius, the above analysis must be adjusted to reflect $R_{\mathrm{disk}}\to R_{\mathrm{WD}}$. This results in a temperature of $T_{\mathrm{max}}\approx 5\times 10^4\ \mathrm{K}$. So the range of temperatures is $10^3-10^5\ \mathrm{K}$ , and it would radiate primarily in the visible to ultraviolet. In reality, the bounding layer can be smaller than $2\pi R_{\mathrm{WD}}^2$ if it is an annulus which causes the temperature to go even higher into the extreme UV or soft X-Rays.\\
+	
+	\n In magnetic WDs, the flux is channeled to a small polar cap $\sim 10\ \mathrm{km}$ with ree-fall velocities, so the temperatures can be as high as $T\sim 10^8\ \mathrm{K}$ ($\sim$10 keV). There may also be circularly polarized radiation at cyclotron frequencies of
+	\begin{equation}
+		\label{eq:cv:7} \nu = \frac{eB}{m_e c} = 2.8\times 10^{13}\ \mathrm{hz}\ \left(\frac{B}{10^7\ \mathrm{G}}\right)
+	\end{equation}
+	which is in the near IR. This radiation would be absorbed by the WD and re-radiated in the EUV to optical ranges. A spectrum from a CV will have low frequency components from a companion red star, medium frequency components from an accretion disk, and/or high frequency components from the boundary layer where the material meets the WD.
+	% subsubsection general_considerations (end)
+	% subsection cataclysmic_varaiables (end)
 	% section white_dwarfs (end)
-=======
-		\n There is a fundamental limit on the rate at which matter can be accreted, called the \textbf{Eddington Limit}.
-	% subsection spherical_flow_of_ionized_material_onto_compact_objects (end)
-	% section accretion_of_astrophysical_plasmas (end)
-
->>>>>>> 41373642abef7a5d5e778cef1a91b2aed4be7f27
+	\section{Neutron Stars} % (fold)
+	\label{sec:neutron_stars}
+	Neutron stars were first discovered in 1967 by Jocelyn Bell and Hewish (Hewish later got a Nobel prize). They discovered pulsars through radio observations, originally thinking they might be aliens. After discovering several of these LGMs (Little Green Men), they concluded that they were not, in fact, aliens, but some astrophysical object.\\
+	
+	\n When a WD's mass exceeds the Chandrasekhar mass, it will begin to collapse as the pressure from degenerate electrons can no longer halt the gravitational force. This can also occur in a degenerate core of a massive store (like an iron core). Note that this is \emph{not} what causes a Type Ia supernova. Those start when a C-O WD \emph{approaches} $M_{\mathrm{Ch}}$, triggering explosive carbon burning. \emph{Exceeding} $M_{\mathrm{Ch}}$ results in collapse to a neutron star.\\
+	
+	\n At some point, the electrons' Fermi energy,
+	\begin{equation}
+		\label{eq:neutron:1} E_{\mathrm{F}}(e^-) = \sqrt{(p_{\mathrm{F}}c)^2 + (m_ec^2)}
+	\end{equation}
+	exceeds
+	\begin{equation}
+		\label{eq:neutron:2} (m_n - m_p)c^2 = 1.29\ \mathrm{MeV}
+	\end{equation}
+	This happens at a density of $\rho_0 = 1.2\times 10^9\ \mathrm{g\ cm^{-3}}$. At higher densities, it becomes energetically favorable for electrons to inverse beta decay:
+	\begin{equation}
+		\label{eq:neutron:3} e^- + p \to n + \nu_e
+	\end{equation}
+	This leads to more and more neutrons. More realistically, the WD contains nuclei and not free neutrons, protons, and electrons. Electrons capture onto nuclei to form increasingly neutron-rich nuclei. At a density of $\rho \approx 4.3\times 10^{11}\ \mathrm{g\ cm^{-3}}$ neutrons begin to bleed from nuclei. This process is called ``neutron drip''. The star continues to collapse until $\rho>10^{14}\ \mathrm{g\ cm^{-3}}$, at which point neutron degeneracy pressure becomes strong enough to halt further compression. Note that normal nuclear matter (that is, nuclei) has a density of $\rho_{\mathrm{nuc}}\approx 2.8\times 10^{14}\ \mathrm{g\ cm^{-3}}$. The equation of state at these high densities is highly uncertain and is sensitive nuclear theory.\\
+	
+	\n Below are some useful facts pertinent neutron stars. The radius of a nucleus is approximately given by $R_{\mathrm{nuc}}\sim A^{1/3}$ where $A$ is the mass number. The ``radius'' of a nucleon is $r_0 = 1.25\ \mathrm{fm}=1.25\times 10^{-13}\ \mathrm{cm}$, so the density of such nuclear matter is $\rho_{\mathrm{nuc} = \frac{3 A^{1/3}m_p}{4\pi r_0^3}}$.
+	% section neutron_stars (end)
+	
 \end{document}
