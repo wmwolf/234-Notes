@@ -888,13 +888,205 @@ fancyhdr}
 	\begin{equation}
 		\label{eq:neutron:2} (m_n - m_p)c^2 = 1.29\ \mathrm{MeV}
 	\end{equation}
-	This happens at a density of $\rho_0 = 1.2\times 10^9\ \mathrm{g\ cm^{-3}}$. At higher densities, it becomes energetically favorable for electrons to inverse beta decay:
+	This happens at a density of $\rho_0 = 1.2\times 10^7\ \mathrm{g\ cm^{-3}}$. At higher densities, it becomes energetically favorable for electrons to inverse beta decay:
 	\begin{equation}
 		\label{eq:neutron:3} e^- + p \to n + \nu_e
 	\end{equation}
-	This leads to more and more neutrons. More realistically, the WD contains nuclei and not free neutrons, protons, and electrons. Electrons capture onto nuclei to form increasingly neutron-rich nuclei. At a density of $\rho \approx 4.3\times 10^{11}\ \mathrm{g\ cm^{-3}}$ neutrons begin to bleed from nuclei. This process is called ``neutron drip''. The star continues to collapse until $\rho>10^{14}\ \mathrm{g\ cm^{-3}}$, at which point neutron degeneracy pressure becomes strong enough to halt further compression. Note that normal nuclear matter (that is, nuclei) has a density of $\rho_{\mathrm{nuc}}\approx 2.8\times 10^{14}\ \mathrm{g\ cm^{-3}}$. The equation of state at these high densities is highly uncertain and is sensitive nuclear theory.\\
+	This leads to more and more neutrons and, ultimately, a neutron star.\\
 	
-	\n Below are some useful facts pertinent neutron stars. The radius of a nucleus is approximately given by $R_{\mathrm{nuc}}\sim A^{1/3}$ where $A$ is the mass number. The ``radius'' of a nucleon is $r_0 = 1.25\ \mathrm{fm}=1.25\times 10^{-13}\ \mathrm{cm}$, so the density of such nuclear matter is $\rho_{\mathrm{nuc} = \frac{3 A^{1/3}m_p}{4\pi r_0^3}}$.
+	\n More realistically, the WD contains nuclei (C and O, or O and Ne, etc.) and not free neutrons, protons, and electrons. Electrons capture onto nuclei to form increasingly neutron-rich nuclei. At a density of $\rho \approx 4.3\times 10^{11}\ \mathrm{g\ cm^{-3}}$ neutrons begin to bleed from nuclei. This process is called ``neutron drip'' which ``softens'' the equation of state. The star continues to collapse until $\rho>10^{14}\ \mathrm{g\ cm^{-3}}$, at which point neutron degeneracy pressure becomes strong enough to halt further compression. Note that normal nuclear matter (that is, nuclei) has a density of $\rho_{\mathrm{nuc}}\approx 2.8\times 10^{14}\ \mathrm{g\ cm^{-3}}$. The equation of state at these high densities is highly uncertain and is sensitive nuclear theory.\\
+	
+	\n The actual structure of a neutron star is a bit of a mystery, but if it is indeed just bare neutrons (it probably isn't), we can get some intuition from nuclear physics. The actual equation of state in a neutron star is highly uncertain. The radius of a nucleus is approximately given by $R_{\mathrm{nuc}}\sim A^{1/3}$ where $A$ is the mass number. The ``radius'' of a nucleon is $r_0 = 1.25\ \mathrm{fm}=1.25\times 10^{-13}\ \mathrm{cm}$, so the density of such nuclear matter is $\rho_{\mathrm{nuc}} = 3 A^{1/3}m_n/(4\pi R_{\mathrm{nuc}}^3)$.
+	\subsection{Relativistic Caveats} % (fold)
+	\label{sub:relativistic_caveats}
+	 The Schwarzschild radius for a $1.4\ M_\odot$ black hole is about 3 km, so the general relativistic corrections are important in neutron stars, on the order of $20\%$. The Schwarzschild radius is
+	\begin{equation}
+		\label{eq:relativistic:1} R_{\mathrm{Sch}} = \frac{GM}{c^2}
+	\end{equation}
+	so we expect to see gravitational redshifts of 
+	\begin{equation}
+		\label{eq:relativistic:2} \frac{GM}{c^2R} \sim \frac{\Delta \lambda}{\lambda} = z \approx 0.2
+	\end{equation}
+	Such deviations in spectra are indeed observed in known neutron stars. As a result of general relativistic corrections, the standard equation of hydrostatic equilibrium is no longer valid. Instead, we must use the TOlman-Oppenheimer-Vokoff (TOV) equation, which is derived from assuming a spherically symmetric metric (and nearly nothing else!) in general relativity.\\
+	
+	\n At masses above $M=M_\odot$, (and densities above nuclear densities), the equation of state breaks down. This adds an additional uncertainty to the mass-radius relation since things like nucleon-nucleon repulsion might soften the equation of state, but if new particles are created at high densities, this too might soften the equation of state. A softer equation of state means that there is a lower maximum mass. The mass limit for neutron stars is highly uncertain. We typically think it is somewhere around 2 $M_\odot$ to $3.2\ M_\odot$. Most neutron star masses are clustered around $1.4\ M_\odot$.
+	% subsection relativistic_caveats (end)
+	\subsection{Neutron Star Structure} % (fold)
+	\label{sub:neutron_star_structure}
+	The general picture of a neutron star consists of an atmosphere, an outer crust, an inner crust, and outer core, and an inner core. The outer parts are fairly well understood, but as we move inwards, less and less is known. From the atmosphere through both crusts, it is estimate that about 1\% of the mass is accounted for. The rest is in the core material.
+	\paragraph{Atmosphere} % (fold)
+	\label{par:atmosphere}
+	At a temperatures of about $3\times 10^6\ \mathrm{K}$, this is about 10 cm thick, and for temperatures of about $3\times 10^5\ \mathrm{K}$, about 10 mm thick. We don't really understand the atmosphere with magnetic fields with $B>10^{11}\ \mathrm{G}$ or temperatures $T<10^6\ \mathrm{K}$. Typically the density follows $\rho\leq 10^6\ \mathrm{g\ cm^{-3}}$ and the total mass in the atmosphere is negligible and comprised largely of ${}^{56}\mathrm{Fe}$. This atmosphere shapes the emerging spectrum and contains a plasma layer that is highly ionized. The atomic energy levels are significantly distorted by the magnetic fields. For $B\sim 10^{12}\ \mathrm{G}$, atoms are shaped like needles. These weirdly-shaped atoms are the reasons why the atomic levels are distorted.
+	% paragraph atmosphere (end)
+	\paragraph{Outer Crust} % (fold)
+	\label{par:outer_crust}
+	The outer crust is basically white dwarf material.  The densities range from the atmospheric density up to $\rho \sim 14\times 10^{11}\ \mathrm{g\ cm^{-3}}$. It is on the order of 100 m thick, and at the top, the dominant nucleus if ${}^{56}\mathrm{Fe}$. There are non-degenerate to degenerate electrons present, and at high depths, the material is solid. Electron capture onto nuclei occurs, causing neutron drip at the bottom of the crust which forms a neutron gas with density $\rho\sim 4\times 10^{11}\ \mathrm{g\ cm^{-3}}$.
+	% paragraph outer_crust (end)
+	\paragraph{Inner Crust} % (fold)
+	\label{par:inner_crust}
+	The inner crust is approximately 1 km thick. The densities range from $\rho_{\mathrm{drip}}$ to $0.5\rho_{\mathrm{nuc}}$, where you may recall that $\rho_{\mathrm{nuc}}\approx 2.8\times 10^{14}\ \mathrm{g\ cm^{-3}}$. The matter consists of electrons, free neutrons, and neutron-rich nuclei. The preferred nucle become more and more neutron as the density is increased. The nucleon number reaches several, unlike on Earth. These nuclei are just no possible in pretty much any other place in the universe. However, the nuclei number goes to zero at the core boundary as the nuclei get distorted into strange shapes. This gives rise to the colorful terminology of nuclear pasta. Spherical nuclei are called meatballs, long thin nuclei are spaghetti, and nuclear slabs are called lasagna. There are also lattice inverts, which are voids embedded in nuclear matter, called swiss chese. Finally, there are touching nucleons touching, forming a uniform nuclear fluid (the ``sauce''). It may be that this nucleon fluid is a superfluid at low temperatures, which would result in a vanishing viscosity in the fluid. The equation of state is relatively well-known for the crust.
+	% paragraph inner_crust (end)
+	\paragraph{Outer Core} % (fold)
+	\label{par:outer_core}
+	Here the density ranges from $0.5\rho_{\mathrm{nuc}}<\rho < 2\rho_{\mathrm{nuc}}$, and the neutron to proton ratio is approximately $n/p>20$. Nuclei essentially cease to exist and the matter transitions to a neutron-proton fluid with negatively charged stuff. In this regime, nucleon-nucleon repulsion becomes important, and the neutrons become superfluid. Along with the inner core, this contains 99\% of the mass.
+	% paragraph outer_core (end)
+	\paragraph{Inner Core} % (fold)
+	\label{par:inner_core}
+	Here the densities are greater than $\rho\geq 2\rho_{\mathrm{nuc}}$ and possibly as high as $10-15\rho_{\mathrm{nuc}}$. The equation of state is unknown. It could consist of quark matter, hyperons (baryons that contain strange quarks), pions, or kaons\ldots we don't really know.
+	% paragraph inner_core (end)
+	% subsection neutron_star_structure (end)
+	\subsection{Superfluidity} % (fold)
+	\label{sub:superfluidity}
+	At temperatures less than some critical temperature $T_c$, we get superfluidity, which is a phenomenon that does not affect the equation of state. It does, however, affect heat capacity and thus neutron star cooling. Protons become superconducting and the magnetic field becomes quantized into flux tubes. The magnetic field freezes in the crust, causing co-rotation of the crust and core (making essentially solid-body rotation).
+	% subsection superfluidity (end)
 	% section neutron_stars (end)
+\section{X-Ray Binaries} % (fold)
+\label{sec:x_ray_binaries}
+	An \textbf{X-Ray Binary} (XRB) is a binary consisting of a neutron star or black hole with some other companion. Their radiation peaks at $0.1-100\ \mathrm{keV}$. The radiative efficiencies of their accretion power are
+	\begin{equation}
+		\label{eq:x_ray_binary:1} \eta-{\mathrm{NS}} = \frac{GM}{Rc^2} \approx 0.1
+	\end{equation}
+	for a neutron star and about $0.4$ for a black hole. This means that 10 and 40 percent of the rest energy of accreted material is radiated away upon accretion. This means that the energy generation rate per unit mass is approxmately
+	\begin{equation}
+		\label{eq:x_ray_binary:2} \epsilon_{\mathrm{NS}}\sim 10^{20}\ \mathrm{erg\ g^{-1}}
+	\end{equation}
+	Compare this to hydrogen fusion, which has only $\epsilon_{\mathrm{CNO}}=6\times 10^{18}\ \mathrm{erg\ g^{-1}}\approx 0.007c^2$. The luminosity of X-Ray binaries is usually Eddington-limited, with $L=L_{\mathrm{Edd}}sim 10^{38}\ \mathrm{erg\ s^{-1}}$ and an accretion rate of $\dot{M}\sim 10^{-8}\ M_\odot\ \mathrm{yr^{-1}}$. Comparing this luminosity to a typical radius of $R\sim 10^6\ \mathrm{cm}$ gives a blackbody temperature of $T\approx \times 10^{7}\ \mathrm{K}$. So, these are \emph{hot} surfaces. This corresponds to a frequency of $\nu=1.2\times 10^{18}\ \mathrm{Hz}$, a wavelength of $\lambda = 25\ \textrm{\AA}$, or a photon energy of $h\nu = 5\ \mathrm{keV}$.\\
 	
+	\n We encounter XRBs in two main flavors. The first is a \textbf{Low Mass X-Ray Binary} (LMXRB), which consists of a neutron star and a main sequence star that is undergoing Roche lobe overflow onto its compact companion. A prime example of a LMXRB is the 1972 discovery of Her X-1 with its 1.24 second period (which is the rotation period of the neutron star) and a secondary 1.7 day period (which is the period of the orbit). Additionally, we observe \textbf{High Mass X-Ray Binaries} (HMXRB), which have a neutron star and an OBstar that is emitting matter via a wind, such as Cen X-3 (1971), which has a 2.1 day period.\\
+	
+	\n The maximum temperature will occur when free falling matter hits the neutron star surface at $v_{\mathrm{ff}}\sim 0.1c$. This gives a temperature of
+	\begin{equation}
+		\label{xrb:3} \frac{1}{2}m_p v_{\mathrm{ff}}^2 = \frac{3}{2}k T_{\mathrm{eff}} \qquad \Rightarrow \qquad T_{\mathrm{eff}} = 3.6\times 10^{12} \left(\frac{v_{\mathrm{ff}}}{c}\right)\ \mathrm{K}
+	\end{equation}
+	Where the free fall velocity is
+	\begin{equation}
+		\label{eq:xrb:4} v_{\mathrm{ff}} = \left(\frac{2GM}{r}\right)^{1/2}
+	\end{equation}
+	Usually we see $T\sim T_{\mathrm{Blackbody}}$ rather than $T_{\mathrm{ff}}$.\\
+	
+	\subsection{Magnetic Inflows} % (fold)
+	\label{sub:magnetic_inflows}
+	\n The intense magnetization of neutron stars (e.g.\ $B\sim 10^{12}\ \mathrm{G}$) can also disrupt the usual accretion flow at the magnetic (or Alfv\'en) radius, $R_{\mathrm{M}}$, at which the magnetic field pressure equals the ram pressure of freefall. Algebraic, this condition is denoted by
+	\begin{equation}
+		\label{eq:xrb:5} \rho v_{\mathrm{ff}}^2 = \frac{B^2}{8\pi}
+	\end{equation}
+	where $B^2$ has energies of energy per volume (i.e., pressure). If we have spherical symmetry, the accretion rate is
+	\begin{equation}
+		\label{eq:xrb:6} \dot{M} = 4\pi r^2\rho v_{\mathrm{ff}}
+	\end{equation}
+	and the magnetic field is
+	\begin{equation}
+		\label{eq:xrb:7} \norm{B} = \frac{\mu}{r^3}\sim 10^{12}\ \mathrm{G} \ \textrm{ where $r=R_{\mathrm{NS}}$}
+	\end{equation}
+	where $\mu$ is the magnetic dipole moment of the neutron star. We can solve eq.~\eqref{eq:xrb:6} for the density at $r = R_\mathrm{M}$ to get
+	\begin{equation}
+		\label{eq:xrb:8} \rho = \frac{\dot{M}}{4\pi R_{\mathrm{M}}v_{\mathrm{ff}}}
+	\end{equation}
+	where now
+	\begin{equation}
+		\label{eq:xrb:9} v_{\mathrm{ff}} = \left(\frac{2GM}{R_{\mathrm{M}}}\right)^{1/2}
+	\end{equation}
+	Then the condition to find $R_{\mathrm{M}}$, eq.~\eqref{eq:xrb:5}, becomes
+	\begin{equation}
+		\label{eq:xrb:10} \frac{(2GM)^{1/2}\dot{M}}{4\pi R_{\mathrm{M}}^{5/2}} = \frac{\mu^2}{8\pi R_{\mathrm{M}}^6}
+	\end{equation}
+	Solving this for $R_{\mathrm{M}}$ gives us
+	\begin{equation}
+		\label{eq:xrb:11} R_{\mathrm{M}}=(8G)^{-1/7}\mu^{4/7}\dot{M}^{-2/7}M^{-1/7}
+	\end{equation}
+	Now if we use the XRB's luminosity as $L_X = GM\dot{M}/R$ to parameterize $R$, we get
+	\begin{multline}
+		\label{eq:xrb:12} R_{\mathrm{M}} = 2.9\times 10^8\ \mathrm{cm}\ \left(\frac{M}{M_\odot}\right)^{-1/7} \left(\frac{R}{10^6\ \mathrm{cm}}\right)^{-2/7}\left(\frac{L_X}{10^{37}\ \mathrm{erg\ s^{-1}}}\right)^{-2/7}\\
+		\times \left(\frac{\mu}{10^{30}\ \mathrm{G\ cm^{-3}}}\right)^{4/7} \approx 3\times 10^8\ \mathrm{cm}
+	\end{multline}
+	This radius is several hundred neutron star radii, so this magnetic distortion is an observable effect. The picture is then some accretion disk that has some inner radius where matter is then channeled along field lines to the polar caps. Such a configuration is shown in Figure~\ref{fig:xrb:1}.
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width = 0.6 \textwidth]{figures/alfven_shell.pdf}
+		\caption{A sketch of magnetically distorted accretion. Material outside $R_{\mathrm{M}}$ forms a normal accretion disk, but within $R_{\mathrm{M}}$, it is channeled along magnetic field lines to the magnetic polar caps, which may or may not be along the same axis as the rotation axis.}
+		\label{fig:xrb:1}
+	\end{figure}
+	The magnetic channeling of material causes a relatively small magnetic cap area to be heated by the infalling plasma. The incoming matter int his region will be revolving about the magnetic fields at the cyclotron frequency, which for electrons is 
+	\begin{equation}
+		\label{eq:xrb:13} E_{\mathrm{cyc}} = h\nu_e = 11.6\left(\frac{B}{10^{12}\ \mathrm{G}}\right)\ \mathrm{keV}
+	\end{equation}
+	and for protons
+	\begin{equation}
+		\label{eq:xrb:14} E_{\mathrm{cyc}} = h\nu_p = 6.3\left(\frac{B}{10^{15}\ \mathrm{G}}\right)\ \mathrm{keV}
+	\end{equation}
+	So the energies of these particles are quantized for motion perpendicular to the field. These quantized levels are called Landau levels and are given by
+	\begin{equation}
+		\label{eq:xrb:15} h\nu = (n+\frac{1}{2} + s)E_{\mathrm{cyc}}
+	\end{equation}
+	where $n$ is the quantum number and $s=\pm 1/2$ is the spin of the particle. Thus there will be increased Compton scattering at these quantized energies, which was seen in M Her X-1 in the 1970s in the absorption spectrum. The relativistic redshift is important here, too, since $h\nu_{\mathrm{obs}} = h\nu_{\mathrm{cyc}}/(1+z)$.\\
+	
+	\n We already stated that the magnetic field may be misaligned with the rotation axis. This misalignment gives rise to X-Ray pulsations. These, too, are observed. For example, a period of 0.7145 s is observed in SMC X-1 and 0.069 in A05388-66 (cool name, huh?).\\
+	
+	\n The accreted material can also act to spin up the neutron star by taking angular momentum from the disk and depositing it in the neutron star. For example, millisecond pulsars are found in binaries and are thought to have been spun-up over the course of their accretion lives.
+	% subsection magnetic_inflows (end)
+	\subsection{Pulsar Spindown} % (fold)
+	\label{sub:pulsar_spindown}
+	If a relatively slowly spinning neutron star can be spun up by accreting material, a rapidly-rotating neutron star should be able to spun \emph{down} by the accreted material. For example, the Crab pulsar, which is a remnant of SN 1054 has a period of $P=33\ \mathrm{ms}$, but it is slowing down at $dP/dt\sim 1\ \mathrm{ms}/(100\ \mathrm{yrs})$.\\
+	
+	\n If we approximate a neutron star as a uniform sphere, then the moment of inertia is
+	\begin{equation}
+		\label{eq:spindown:1} I = \frac{2}{5}M R^2 = 2.5\times 10^{45}\ \left(\frac{M}{1.4\ M_\odot}\right) \left(\frac{R}{1.5\times 10^6\ \mathrm{cm}}\right)^{2}\ \mathrm{g\ cm^2}
+	\end{equation}
+	The crab pulsar spins down at a rate
+	\begin{equation}
+		\label{eq:spindown:2} \frac{d\omega}{dt} = -2.4\times 10^{-9}\ \mathrm{s^{-2}}
+	\end{equation}
+	where $\omega$ is the angular velocity. This implies a spin-energy loss rate (using $E_{\mathrm{rot}} = \frac{1}{2} I \omega^2$) of
+	\begin{equation}
+		\label{eq:spindown:3} \frac{dE_{\mathrm{rot}}}{dt} = I\omega\frac{d\omega}{dt} \approx 4.6\times 10^{38}\ \mathrm{erg\ s^{-1}}
+	\end{equation}
+	This is comparable to the crab nebula luminosity of $5\times 10^{38}\ \mathrm{erg/s}$. That is, the energy that is being radiated could very well be taken from the rotational velocity. To model this, we'll use the so-called oblique rotator model, where the magnetic dipole and rotation axes are misaligned by some angle $\alpha$. An observer at infinity will just see a changing magnetic dipole moment, which we will designate as $\mathbf{m}$. This is given in terms of the magnetic field and radius as
+	\begin{equation}
+		\label{eq:spindown:4} \norm{\mathbf{m}} = \frac{B_p R^3}{2}
+	\end{equation}
+	where $B_p$ is the magnetic field at the pole of the neutron star and $R$ is the radius of the star. Using this language, the energy loss rate would be
+	\begin{equation}
+		\label{eq:spindown:5} \left(\frac{dE}{dt}\right)_{\mathrm{WD}} = -\frac{2}{3c^3}m^2\omega^4\sin^2\alpha
+	\end{equation}
+	for the crab pulsar, we have $m\sin\alpha\sim 4\times 10^{30}\ \mathrm{G\ cm^3}$ and an implied magnetic field of $B\sim 10^{12}\ \mathrm{G}$. We can rewrite the energy loss as
+	\begin{equation}
+		\label{eq:spindown:6} \dot{E} = -\frac{2}{3c^3}\norm{\ddot{\mathbf{m}}}^2 = -6.2\times 10^{27}\ \mathrm{erg\ s^{-1}}\ \left(\frac{B_p}{10^{12}\ \mathrm{G}}\right)^2 \left(\frac{R}{10^6\ \mathrm{cm}}\right)^6 \left(\frac{\omega}{\mathrm{1\ s^{-1}}}\right)\sin^2\alpha
+	\end{equation}
+	Now if we set $\dot{E}_{\mathrm{MD}}=\dot{E}_{\mathrm{rot}}$, we get the spindown rate:
+	\begin{equation}
+		\label{eq:spindown:7} \dot{\omega} = -\frac{B_p^2R^6\omega^3\sin^2\alpha}{6c^3 I}
+	\end{equation}
+	The negative sign means that the spin must slow down. We've also been assuming $B$ is not changing. For reference, this gives the crab nebula a period of $P=0.033\ \mathrm{s}$ and a spindown rate of $\dot{P} = 4.2\times 10^{-13}\ \mathrm{s\ s^{-1}}$. Now since $\dot{\omega}=-C\omega^3$ for some constant $C$, we get
+	\begin{equation}
+		\label{eq:spindown:8} \int_{\omega_0}^\omega \frac{d\omega}{\omega^3} = -\int_0^t c\,dt
+	\end{equation}
+	Simplifying this, we get
+	\begin{equation}
+		\label{eq:spindown:9} \frac{1}{2C}\left[\frac{1}{\omega^2}-\frac{1}{\omega_0^2}\right] = t > \frac{1}{2C\omega^2}
+	\end{equation}
+	For the crab, this max value is $1247$ years (not bad!), so it appears that dipole braking is a good understanding of what's going on. Note that since at early times, spindown occurs much more rapidly, a good measurement of $\omega_0$ is not really necessary for a good measurement. We can also define a dipole timescale:
+	\begin{equation}
+		\label{eq:spindown:10} \tau_{\mathrm{dipole}} = -\left(\frac{\omega}{2\dot{\omega}}\right) = \left(\frac{P}{2\dot{P}}\right)
+	\end{equation}
+	which is the timescale on which the period is changing significantly.\\
+	
+	\n Note that using $\dot{E}$ for the crab pulsar, the magnetic dipole model and $\sin\alpha=1$ gives a polar magnetic field of $B_p = 5.2\times 10^{12}\ \mathrm{G}$. One might wonder where such strong magnetic fields come from. On a typical MS star, there is typically a $\approx 100\ \mathrm{G}$ magnetic field at the surface. A decrease int he radius by a factor of $10^5$ causes an increase in $B_p$ of $10^{10}$. So long as magnetic flux is conserved, such compact objects should always have very strong magnetic fields.	
+	\paragraph{Braking Index} % (fold)
+	\label{par:braking_index}
+	For any power-law deceleration model (like the magnetic dipole model we've presented), we can write $\dot{\omega} = - (\mathrm{constant})\omega^n$, where $n$ is called the \textbf{braking index}. So as we've seen, $n=3$ for the magnetic dipole model. In general, we have\\
+	\begin{equation}
+		\label{eq:spindown:11} n \equiv -\frac{\omega\ddot{\omega}}{\dot{\omega}^2}
+	\end{equation}
+	Another important case is that of gravitational wave radiation, where $n=5$. The more general pulsar age formula is then
+	\begin{equation}
+		\label{eq:spindown:12} t = -\frac{1}{n-1} \left(\frac{\omega}{\dot{\omega}}\right) \left[1-\left( \frac{\omega}{\omega_0}\right)^{n-1}\right]
+	\end{equation}
+	And so the characteristic age (assuming $\omega \ll \omega_0$) is 
+	\begin{equation}
+		\label{eq:spindown:13} \tau = -\frac{1}{n-1}\left(\frac{\omega}{\dot{\omega}}\right)
+	\end{equation}
+	Doing this calculation, the crab pulsar gives $n=2.515$ and from PSR 1507-58, we get $n=2.83$. So it seems that magnetic dipole braking is not the whole story.
+	% paragraph braking_index (end)
+	% subsection pulsar_spindown (end)
+% section x_ray_binaries (end)	
 \end{document}

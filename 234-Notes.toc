@@ -30,3 +30,15 @@
 \contentsline {subsubsection}{\numberline {3.5.4}Magnetic CVs}{27}{subsubsection.3.5.4}
 \contentsline {subsubsection}{\numberline {3.5.5}General Considerations}{27}{subsubsection.3.5.5}
 \contentsline {section}{\numberline {4}Neutron Stars}{28}{section.4}
+\contentsline {subsection}{\numberline {4.1}Relativistic Caveats}{29}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Neutron Star Structure}{30}{subsection.4.2}
+\contentsline {paragraph}{Atmosphere}{30}{section*.5}
+\contentsline {paragraph}{Outer Crust}{30}{section*.6}
+\contentsline {paragraph}{Inner Crust}{30}{section*.7}
+\contentsline {paragraph}{Outer Core}{30}{section*.8}
+\contentsline {paragraph}{Inner Core}{30}{section*.9}
+\contentsline {subsection}{\numberline {4.3}Superfluidity}{31}{subsection.4.3}
+\contentsline {section}{\numberline {5}X-Ray Binaries}{31}{section.5}
+\contentsline {subsection}{\numberline {5.1}Magnetic Inflows}{32}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Pulsar Spindown}{33}{subsection.5.2}
+\contentsline {paragraph}{Braking Index}{35}{section*.10}
