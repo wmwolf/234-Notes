@@ -944,13 +944,13 @@ fancyhdr}
 \label{sec:x_ray_binaries}
 	An \textbf{X-Ray Binary} (XRB) is a binary consisting of a neutron star or black hole with some other companion. Their radiation peaks at $0.1-100\ \mathrm{keV}$. The radiative efficiencies of their accretion power are
 	\begin{equation}
-		\label{eq:x_ray_binary:1} \eta-{\mathrm{NS}} = \frac{GM}{Rc^2} \approx 0.1
+		\label{eq:x_ray_binary:1} \eta_{\mathrm{NS}} = \frac{GM}{Rc^2} \approx 0.1
 	\end{equation}
 	for a neutron star and about $0.4$ for a black hole. This means that 10 and 40 percent of the rest energy of accreted material is radiated away upon accretion. This means that the energy generation rate per unit mass is approxmately
 	\begin{equation}
 		\label{eq:x_ray_binary:2} \epsilon_{\mathrm{NS}}\sim 10^{20}\ \mathrm{erg\ g^{-1}}
 	\end{equation}
-	Compare this to hydrogen fusion, which has only $\epsilon_{\mathrm{CNO}}=6\times 10^{18}\ \mathrm{erg\ g^{-1}}\approx 0.007c^2$. The luminosity of X-Ray binaries is usually Eddington-limited, with $L=L_{\mathrm{Edd}}sim 10^{38}\ \mathrm{erg\ s^{-1}}$ and an accretion rate of $\dot{M}\sim 10^{-8}\ M_\odot\ \mathrm{yr^{-1}}$. Comparing this luminosity to a typical radius of $R\sim 10^6\ \mathrm{cm}$ gives a blackbody temperature of $T\approx \times 10^{7}\ \mathrm{K}$. So, these are \emph{hot} surfaces. This corresponds to a frequency of $\nu=1.2\times 10^{18}\ \mathrm{Hz}$, a wavelength of $\lambda = 25\ \textrm{\AA}$, or a photon energy of $h\nu = 5\ \mathrm{keV}$.\\
+	Compare this to hydrogen fusion, which has only $\epsilon_{\mathrm{CNO}}=6\times 10^{18}\ \mathrm{erg\ g^{-1}}\approx 0.007c^2$. The luminosity of X-Ray binaries is usually Eddington-limited, with $L=L_{\mathrm{Edd}}\sim 10^{38}\ \mathrm{erg\ s^{-1}}$ and an accretion rate of $\dot{M}\sim 10^{-8}\ M_\odot\ \mathrm{yr^{-1}}$. Comparing this luminosity to a typical radius of $R\sim 10^6\ \mathrm{cm}$ gives a blackbody temperature of $T\approx \times 10^{7}\ \mathrm{K}$. So, these are \emph{hot} surfaces. This corresponds to a frequency of $\nu=1.2\times 10^{18}\ \mathrm{Hz}$, a wavelength of $\lambda = 25\ \textrm{\AA}$, or a photon energy of $h\nu = 5\ \mathrm{keV}$.\\
 	
 	\n We encounter XRBs in two main flavors. The first is a \textbf{Low Mass X-Ray Binary} (LMXRB), which consists of a neutron star and a main sequence star that is undergoing Roche lobe overflow onto its compact companion. A prime example of a LMXRB is the 1972 discovery of Her X-1 with its 1.24 second period (which is the rotation period of the neutron star) and a secondary 1.7 day period (which is the period of the orbit). Additionally, we observe \textbf{High Mass X-Ray Binaries} (HMXRB), which have a neutron star and an OBstar that is emitting matter via a wind, such as Cen X-3 (1971), which has a 2.1 day period.\\
 	
@@ -1050,7 +1050,7 @@ fancyhdr}
 	\end{equation}
 	for the crab pulsar, we have $m\sin\alpha\sim 4\times 10^{30}\ \mathrm{G\ cm^3}$ and an implied magnetic field of $B\sim 10^{12}\ \mathrm{G}$. We can rewrite the energy loss as
 	\begin{equation}
-		\label{eq:spindown:6} \dot{E} = -\frac{2}{3c^3}\norm{\ddot{\mathbf{m}}}^2 = -6.2\times 10^{27}\ \mathrm{erg\ s^{-1}}\ \left(\frac{B_p}{10^{12}\ \mathrm{G}}\right)^2 \left(\frac{R}{10^6\ \mathrm{cm}}\right)^6 \left(\frac{\omega}{\mathrm{1\ s^{-1}}}\right)\sin^2\alpha
+		\label{eq:spindown:6} \dot{E} = -\frac{2}{3c^3}\norm{\ddot{\mathbf{m}}}^2 = -6.2\times 10^{27}\ \mathrm{erg\ s^{-1}}\ \left(\frac{B_p}{10^{12}\ \mathrm{G}}\right)^2 \left(\frac{R}{10^6\ \mathrm{cm}}\right)^6 \left(\frac{\omega}{\mathrm{1\ s^{-1}}}\right)^4\sin^2\alpha
 	\end{equation}
 	Now if we set $\dot{E}_{\mathrm{MD}}=\dot{E}_{\mathrm{rot}}$, we get the spindown rate:
 	\begin{equation}
@@ -1088,5 +1088,80 @@ fancyhdr}
 	Doing this calculation, the crab pulsar gives $n=2.515$ and from PSR 1507-58, we get $n=2.83$. So it seems that magnetic dipole braking is not the whole story.
 	% paragraph braking_index (end)
 	% subsection pulsar_spindown (end)
+	\subsection{Pulsar Characteristics} % (fold)
+	\label{sub:pulsar_characteristics}
+	\emph{Monday, May 6, 2013}\\
+	
+	\n There are two main classes of pulsars. The first are what we've been talking about, the rotationally powered (radio) pulsars that were first detected back in the 1940's. Additionally, there are accretion-powered (or x-ray) pulsars. Both convert spin energy into radiation, and the energy they radiate in various wavelengths varies dramatically.
+	\begin{table}
+		\centering
+		\begin{tabular}{l l}
+			wavelength & $\dot{E}/\dot{E}_{\mathrm{dip}}$\\
+			\hline\hline
+			radio & $10^{-7}$\\
+			optical & $10^{-5}$\\
+			X-ray & $10^{-4}-10^{-3}$\\
+			$\gamma$-ray & $10^{-2}-10^{-1}$
+		\end{tabular}
+		\label{tab:pulsar:1}
+		\caption{relative energy distributions as a fraction of the spindown power.}
+	\end{table}
+	Table~\ref{tab:pulsar:1} demonstrates that only a small fraction of the total energy available due to spindown is emitted as photons. It is thought that a lot of the remaining energy goes in to driving powerful winds (outflows), making a pulsar wind nebula. Such objects are called \textbf{plerions}. The spectra of such objects can have a thermal component and a power law component around a keV. The thermal portion comes from the neutron star surface, and the power law comes from the acceleration of charged particles in the outflow.\\
+	
+	\n There are several proposed mechanisms for how a pulsar emits the radiation that we observe. The first is the simple case of an aligned magnetic field and rotation axis. We assume a perfectly conducting sphere, in which case the electrons rearrange themselves to remove the magnetic fields. A dipole magnetic field scales as
+	\begin{equation}
+		\label{eq:pulsar:1} \mathbf{B} = B_P R^3\left(\frac{\cos\theta}{r^3}\hat{r} + \frac{\sin\theta}{2r^3} \hat{\theta}\right)
+	\end{equation}
+	The rearrangement of the charges gives rise to an electric field following
+	\begin{equation}
+		\label{eq:pulsar:2} \mathbf{E} + \left(\frac{\bm{\Omega}\times \mathbf{r}}{c}\right)\times \mathbf{B} = 0
+	\end{equation}
+	Near the pole, then, this is
+	\begin{equation}
+		\label{eq:pulsar:3} E_p \approx \frac{R\Omega B_P}{c} \approx 6\times 10^{16} \left(\frac{P}{1\ \mathrm{sec}}\right)^{-1}\left(\frac{B_P}{10^{12}\ \mathrm{G}}\right)\ \mathrm{V\ cm^{-1}}
+	\end{equation}
+	Such electromagnetic fields have a powerful effect on charged particles following the Lorentz force law:
+	\begin{equation}
+		\label{eq:pulsar:4} \mathbf{F} = \frac{q}{c}\mathbf{v}\times \mathbf{B}
+	\end{equation}
+	For protons, this gives a force (relative to the gravitational force) of
+	\begin{equation}
+		\label{eq:pulsar:5} \mathrm{protons:}\ \frac{F_{\mathrm{EM}}}{F_{\mathrm{G}}} \sim \frac{qR\Omega B_p/c}{G M m_p/R^2} \sim 10^9 \gg 1
+	\end{equation}
+	and approximately $10^{11}$ for electrons. As a result, electrons are simply ripped from the neutron star's surface by this intense Lorentz force, tied to magnetic field lines. The magnetic field and plasma then co-rotate with the neutron star uot to the light cylinder of $R_c \equiv c/\Omega = 5.9\times 10^{11}\ \mathrm{cm} (P/1\ \mathrm{sec})$. Past that point there is little or no rotation of the magnetic field lines. Thus, field lines that remain in the light cylinder can stay ``closed'', but those that pass outside the light cylinder will necessarily not closed, and the field lines wind up as the pulsar spins. These free lines can carry matter out of the system, but the exact mechanism isn't well understood. Some models assocate pulses with the polar caps, while others do so with the so-called gap regions, which are the regions in between the open and closed magnetic field lines.\\
+	
+	\n It's believed that electrons can produce \textbf{curvature radiation}, which is similar to synchrotron radiation, but not the same.  As they spin around the field lines, they emit synchrotron radiation, but as the velocity perpendicular to the field line vanishes, they shoot out \emph{along} the \emph{curved} field line. Thus it is like synchrotron radiation, but with the radius set by the curvature of the magnetic fields along which they travel. ??? brings the temperature so high in the neutron star that the it radiates emission that must be coherent. Particles radiating in bunches coherently, not synchrotron. This causes gamma rays, which induces pair-production, which then interacts with the magnetic field, which causes more gamma rays. This is not really well understood, and has admittedly been copied to these notes in low fidelity. Sorry.\\
+	
+	So far we've focused on spindown-powered pulsars. Now we focus our attention on accretion-powered pulsars. These have spin periods ranging from 7.5\ ms to 3 hours, though most are in the range of 1-1000 seconds. Most are HMXRBs, containing O and B star companions (and accretion through polar caps), though some are indeed LMXRBs. Before delving too deep into the general field of accretion-powered pulsars, we should take a brief detour into magnetars.
+	
+	\paragraph{Magnetars} % (fold)
+	\label{par:magnetars}
+	Typical neutron stars have magnetic fields of $B\sim 10^{12}\ \mathrm{G}$. Some, though, have them as large as $B\sim 10^{14}-10^{16}\ \mathrm{G}$. These are the so-called magnetars. If the magnetic field is strong enough, the Larmour radius of electrons becomes smaller than the de Broglie wavelength:
+	\begin{equation}
+		\label{eq:magnetar:1} r_{\mathrm{L}} = \frac{vM_e c}{eB} \qquad \lambda = \frac{h}{m_ev}
+	\end{equation}
+	In situations such as this, there is a quantum critical field, above which quantum mechanics becomes important for electrons in the process. Just setting these two lengthscales together, we get a magnetic field of
+	\begin{equation}
+		\label{eq:magnetar:2} B_{\mathrm{QC}} = \frac{m_e^2 c^3}{he} = 4.4\times 10^{13}\ \mathrm{G}
+	\end{equation}
+	% paragraph magnetars (end)
+	\paragraph{Anomalous X-Ray Pulsars} % (fold)
+	\label{par:anomalous_x_ray_pulsars}
+	 These AXPs are isolated pulsare that emit pulsed -rays with luminosities on the order of $L\sim 10^{35-36}\ \mathrm{erg\ s^{-1}}$ and periods of $P\sim 5-12\ \mathrm{s}$. Such a luminosity is too high for magnetic dipole radiation, so it is assumed (read: guessed) that is is from a dissipation of a strong magnetic field. The characteristic spin-down timescale of 3-100 kyr. These are not typical radio pulsars, with magnetic fields with strengths of $B\sim 10^{14}-10^{16}\ \mathrm{G}$, so these are more like magnetars. 
+	% paragraph anomalous_x_ray_pulsars (end)
+	\paragraph{Soft Gamma-Ray Repeaters} % (fold)
+	\label{par:soft_gamma_ray_repeaters}
+		Soft Gamma-Ray Repeaters, or SGRs, are essentially $\gamma$-ray lighthouses with a thermal spectrum peaking at a few keV. They have periods of $5-8\ \mathrm{s}$ with spindown rates of $\dot{P}\approx 7\times 10{-4}$. Their high magnetic fields put them in the magnetar category, and they are thought to be a young supernova remnant. They are capable of dramatic flares. For instance, one flare, lasting from 1806-1820 gave off approximately $E\sim 2\times 10^{46}\ \mathrm{erg}$ under a magnetic field of $B\sim 1.6\times 10^{15}\ \mathrm{G}$. The energy contained in the magnetic field is then
+		\begin{equation}
+			\label{eq:SGR:1} E_{\mathrm{mag}} \sim \frac{B^2}{8\pi}\frac{4\pi}{3} R^3 \sim 10^{48}\ \mathrm{erg}
+		\end{equation}
+		so the flares give off about 1\% of the magnetic energy in their blast. They are thought to be the result of a stellar ``quake'' that rearranges the magnetic field.
+	% paragraph soft_gamma_ray_repeaters (end)
+	\paragraph{MilisecondPulsars / Recycled Pulsars} % (fold)
+	\label{par:milisecondpulsars_recycled_pulsars}
+	Millisecond pulsars (pulsars that have periods on the order of 1 ms), or recycled pulsars, as they are sometimes referred, often occur (75\% of the time) in binaries. As a result, we understand their short periods to be a result of angular momentum transfer from a companion through RLOF, giving them an unusually short period. They have small period derivatives and long spin-down ages in of $10^9-10^{10}\ \mathrm{yrs}$. They \emph{should} have shut off, but due to the spin-up from their companion, they have been ``recycled''. Those without companions are thought to have evaporated or tidally disrupted their donors.
+	% paragraph milisecondpulsars_recycled_pulsars (end)
+	% subsection pulsar_characteristics (end)	
+
 % section x_ray_binaries (end)	
 \end{document}
