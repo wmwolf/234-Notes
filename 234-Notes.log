@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  6 MAY 2013 10:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  13 MAY 2013 10:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -302,7 +302,11 @@ Package: pdfsync 2008/01/26 v1.1
 \f@ncyO@olf=\skip57
 \f@ncyO@orf=\skip58
 )
-(./234-Notes.aux)
+(./234-Notes.aux
+
+LaTeX Warning: Label `eq:acc2:4' multiply defined.
+
+)
 \openout1 = `234-Notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -458,7 +462,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-[4] <figures/compton_scatter.pdf, id=224, 597.5043pt x 401.5pt>
+[4] <figures/compton_scatter.pdf, id=244, 597.5043pt x 401.5pt>
 File: figures/compton_scatter.pdf Graphic file (type pdf)
 
 <use figures/compton_scatter.pdf>
@@ -559,7 +563,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--340
 
  []
 
-[11] <figures/sonic_point.pdf, id=306, 481.8pt x 321.2pt>
+[11] <figures/sonic_point.pdf, id=326, 481.8pt x 321.2pt>
 File: figures/sonic_point.pdf Graphic file (type pdf)
 
 <use figures/sonic_point.pdf>
@@ -570,7 +574,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 392--394
 
  []
 
-[13] <figures/interacting_binary.pdf, id=333, 281.05pt x 321.2pt>
+[13] <figures/interacting_binary.pdf, id=353, 281.05pt x 321.2pt>
 File: figures/interacting_binary.pdf Graphic file (type pdf)
 
 <use figures/interacting_binary.pdf>
@@ -578,7 +582,7 @@ Package pdftex.def Info: figures/interacting_binary.pdf used on input line 408.
 
 (pdftex.def)             Requested size: 171.99922pt x 196.56886pt.
  [14 <./figures/interacting_binary.pdf>]
-<figures/roche_potentials.pdf, id=350, 521.95pt x 321.2pt>
+<figures/roche_potentials.pdf, id=370, 521.95pt x 321.2pt>
 File: figures/roche_potentials.pdf Graphic file (type pdf)
 
 <use figures/roche_potentials.pdf>
@@ -721,7 +725,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 964--966
 
  []
 
-[31] <figures/alfven_shell.pdf, id=538, 321.2pt x 208.78pt>
+[31] <figures/alfven_shell.pdf, id=558, 321.2pt x 208.78pt>
 File: figures/alfven_shell.pdf Graphic file (type pdf)
 
 <use figures/alfven_shell.pdf>
@@ -772,26 +776,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 1133--1134
 
  []
 
-[36] [37]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1167.
- [38]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1167.
+[36] [37] [38]
+Underfull \hbox (badness 10000) in paragraph at lines 1256--1258
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1286
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 1297--1298
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1308.
+[41]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1308.
  (./234-Notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1167.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1167.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1308.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1308.
 
 Package rerunfilecheck Info: File `234-Notes.out' has not changed.
-(rerunfilecheck)             Checksum: 8B5DDD949DF3E03DF6D72BECDA297206;2536.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1167.
+(rerunfilecheck)             Checksum: 8B8CD1639118BF150C7B6E2582BE589F;2802.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1308.
  ) 
 Here is how much of TeX's memory you used:
- 7207 strings out of 493633
- 103294 string characters out of 3143378
- 210363 words of memory out of 3000000
- 10113 multiletter control sequences out of 15000+200000
+ 7275 strings out of 493633
+ 104137 string characters out of 3143378
+ 211809 words of memory out of 3000000
+ 10144 multiletter control sequences out of 15000+200000
  18102 words of font info for 69 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 29i,29n,43p,1203b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,29n,43p,1203b,508s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pf
 b></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
@@ -811,10 +843,10 @@ e/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2011/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2
 011/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 234-Notes.pdf (38 pages, 444268 bytes).
+Output written on 234-Notes.pdf (41 pages, 461437 bytes).
 PDF statistics:
- 746 PDF objects out of 1000 (max. 8388607)
- 669 compressed objects within 7 object streams
- 282 named destinations out of 1000 (max. 500000)
- 314 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 817 PDF objects out of 1000 (max. 8388607)
+ 736 compressed objects within 8 object streams
+ 319 named destinations out of 1000 (max. 500000)
+ 346 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1070,7 +1070,7 @@ fancyhdr}
 	\end{equation}
 	which is the timescale on which the period is changing significantly.\\
 	
-	\n Note that using $\dot{E}$ for the crab pulsar, the magnetic dipole model and $\sin\alpha=1$ gives a polar magnetic field of $B_p = 5.2\times 10^{12}\ \mathrm{G}$. One might wonder where such strong magnetic fields come from. On a typical MS star, there is typically a $\approx 100\ \mathrm{G}$ magnetic field at the surface. A decrease int he radius by a factor of $10^5$ causes an increase in $B_p$ of $10^{10}$. So long as magnetic flux is conserved, such compact objects should always have very strong magnetic fields.	
+	\n Note that using $\dot{E}$ for the crab pulsar, the magnetic dipole model and $\sin\alpha=1$ gives a polar magnetic field of $B_p = 5.2\times 10^{12}\ \mathrm{G}$. One might wonder where such strong magnetic fields come from. On a typical MS star, there is typically a $\approx 100\ \mathrm{G}$ magnetic field at the surface. A decrease in the radius by a factor of $10^5$ causes an increase in $B_p$ of $10^{10}$. So long as magnetic flux is conserved, such compact objects should always have very strong magnetic fields.	
 	\paragraph{Braking Index} % (fold)
 	\label{par:braking_index}
 	For any power-law deceleration model (like the magnetic dipole model we've presented), we can write $\dot{\omega} = - (\mathrm{constant})\omega^n$, where $n$ is called the \textbf{braking index}. So as we've seen, $n=3$ for the magnetic dipole model. In general, we have\\
@@ -1132,7 +1132,7 @@ fancyhdr}
 	
 	\n It's believed that electrons can produce \textbf{curvature radiation}, which is similar to synchrotron radiation, but not the same.  As they spin around the field lines, they emit synchrotron radiation, but as the velocity perpendicular to the field line vanishes, they shoot out \emph{along} the \emph{curved} field line. Thus it is like synchrotron radiation, but with the radius set by the curvature of the magnetic fields along which they travel. ??? brings the temperature so high in the neutron star that the it radiates emission that must be coherent. Particles radiating in bunches coherently, not synchrotron. This causes gamma rays, which induces pair-production, which then interacts with the magnetic field, which causes more gamma rays. This is not really well understood, and has admittedly been copied to these notes in low fidelity. Sorry.\\
 	
-	So far we've focused on spindown-powered pulsars. Now we focus our attention on accretion-powered pulsars. These have spin periods ranging from 7.5\ ms to 3 hours, though most are in the range of 1-1000 seconds. Most are HMXRBs, containing O and B star companions (and accretion through polar caps), though some are indeed LMXRBs. Before delving too deep into the general field of accretion-powered pulsars, we should take a brief detour into magnetars.
+	\n So far we've focused on spindown-powered pulsars. Now we focus our attention on accretion-powered pulsars. These have spin periods ranging from 7.5\ ms to 3 hours, though most are in the range of 1-1000 seconds. Most are HMXRBs, containing O and B star companions (and accretion through polar caps), though some are indeed LMXRBs. Before delving too deep into the general field of accretion-powered pulsars, we should take a brief detour into magnetars.
 	
 	\paragraph{Magnetars} % (fold)
 	\label{par:magnetars}
@@ -1164,4 +1164,145 @@ fancyhdr}
 	% subsection pulsar_characteristics (end)	
 
 % section x_ray_binaries (end)	
+\section{Accretion Disks} % (fold)
+\label{sec:accretion_disks}
+\textit{Monday, May 13, 2013}
+Earlier we found that the temperature in the accretion disk varies as
+\begin{equation}
+	\label{eq:acc2:1}T_{\mathrm{eff}} \sim R^{-3/4}
+\end{equation}
+At each radius, the intensity of radiation is given by the Planck function
+\begin{equation}
+	\label{eq:acc2:2} I_\nu(R) = B_\nu[T(R)]; \qquad B_\nu = \frac{2h\nu^3}{c^2}\frac{1}{e^{h\nu/(kT(R))}-1}
+\end{equation}
+If an observer is at a distance $D$ with a line of site making an inclination angle $i$, the observed flux is
+\begin{equation}
+	\label{eq:acc2:3} F_\nu = \int_{r_*}^{r_{\mathrm{out}}} I_\nu\,d\Omega(R)
+\end{equation}
+where
+\begin{equation}
+	\label{eq:acc2:4} d\Omega(R) = \frac{2\pi r\,dr\,d\phi}{D^2}
+\end{equation}
+is the solid angle subtended by an infinitesimal part of the accretion disk. Expanding this out, we get
+\begin{equation}
+	\label{eq:acc2:4} F_\nu = \frac{4\pi h\nu^3\cos i}{c^2D^2}\int_{r_*}^{r_{\mathrm{out}}} \frac{r\,dr}{\exp\left(\frac{h\nu}{kT(R)}\right)-1}
+\end{equation}
+In the Raleigh-Jeans limit of low photon energies, this reduces to (assuming $\nu \ll kT(R_{\mathrm{out}})/h$) a flux scaling as
+\begin{equation}
+	\label{eq:acc2:5} B_\nu \approx \frac{2kT(R)\nu^2}{c^2} \qquad \Rightarrow \qquad F_\nu^{\mathrm{RJ}}\propto \nu^2
+\end{equation}
+In the high energy limit, $\nu \gg kT(R_*)/h$, we get the Wien result:
+\begin{equation}
+	\label{eq:acc2:6} B_\nu^W \approx \frac{2h\nu^3}{c^2} e^{-\frac{h\nu}{kT}}
+\end{equation}
+and the flux density in the inner, hotter regions is given by
+\begin{equation}
+	\label{eq:acc2:7} F_\nu^W \propto \nu^3 e^{-h\nu/kT}
+\end{equation}
+In between these two regimes we need to consider the true sum of the blackbodies. We change variables to 
+\begin{equation}
+	\label{eq:acc2:8} \eta\equiv \frac{h\nu}{kT(R)} \approx \frac{h\nu}{kT(R_*)}\left(\frac{R}{R_*}\right)^{-3/4}
+\end{equation}
+So the observed flux is now, in terms of $\eta$,
+\begin{equation}
+	\label{eq:acc2:9} F_\nu \propto \nu^{1/3} \int_0^\infty \frac{\eta^{5/3}}{\exp(\eta) - 1}d\eta
+\end{equation}
+So then $F\propto \nu^{1/3}$ in intermediate regions. The resulting spectrum has three regions. With the low- and high-energy regions scaling accordingly, connected by this $nu^{1/3}$ region.
+\subsection{Full Shakura/Sunyaev Solution} % (fold)
+\label{sub:full_shakura_sunyaev_solution_}
+
+\begin{equation}
+	\label{eq:full:1} f = \left[1-\left(\frac{R_*}{R}\right)^{1/2}\right]^{1/4}
+\end{equation}
+For convenience, we'll make the following definitions
+\begin{equation}
+	\label{eq:full:2} R_{10} = \frac{R}{10^{10}\ \mathrm{cm}} \qquad \dot{M}_{16} = \frac{\dot{M}}{10^{16}\ \mathrm{g\ s^{-1}}} \qquad M = \frac{M_*}{M_\odot}.
+\end{equation}
+Then the surface density is
+\begin{equation}
+	\label{eq:full:3} \Sigma = 5.2 \alpha^{-4/5} \dot{M}_{16}^{7/10}M^{1/4}R_{10}^{-3/4} f^{14/5}\ \mathrm{g\ cm^{-2}},
+\end{equation}
+and the height of the disk is
+\begin{equation}
+	\label{eq:full:4} H = 1.7\times 10^8\ \mathrm{cm}\ \alpha^{-1/10}\dot{M}_{16}^{3/20} M^{-3/7} R_{\mathrm{10}}^{-9/5}f^{3/5}.
+\end{equation}
+The density is
+\begin{equation}
+	\label{eq:full:5} \rho = 3.1\times 10^{-5}\ \mathrm{g\ cm^{-3}} \alpha^{-7/10} \dot{M}_{16}^{11/20} M^{5/8} R_{10}^{-15/8}f^{11/5}.
+\end{equation}
+The central temperature is given by
+\begin{equation}
+	\label{eq:full:6} T_c = 1.4\times 10^4\ \mathrm{K}\ \alpha^{-1/5} \dot{M}_{16}^{3/10} M^{1/4} R_{10}^{-3/4} f^{6/5}.
+\end{equation}
+The optical depth is
+\begin{equation}
+	\label{eq:full:7} \tau = 1.9\ \alpha^{-4/5} \dot{M}^{1/5} f^{4/5}
+\end{equation}
+The viscosity is
+\begin{equation}
+	\label{eq:full:8} \nu = 1.8\times 10^{14}\ \mathrm{cm^2\ s^{-1}}\ \alpha^{4/5} \dot{M}_{16}^{3/(r)?}M^{-1/4}R_{10}^{-1/4} f^{-14/5}.
+\end{equation} 
+The radial and azimuthal velocities are given by
+\begin{equation}
+	\label{eq:full:9} v_R \sim 0.3\ \mathrm{km\ s^{-1}} \qquad \mathrm{and}\qquad v_\phi\sim 1000\ \mathrm{km\ s^{-1}}
+\end{equation}
+So the rotational velocity is supersonic, but the rotational drift velocity is subsonic.
+% subsection full_shakura_sunyaev_solution_ (end)
+\subsection{A Few More Tidbits} % (fold)
+\label{sub:a_few_more_tidbits}
+Note that the height is an increasing function of $r$:
+\begin{equation}
+	\label{eq:tidbits:1} \frac{dH}{dr}\propto r^{1/8}
+\end{equation}
+so accretion disks are flared towards their outsides.\\
+
+\n Secondly, our assumptions may be inconsistent with the solution. The critical accretion rate is of course the Eddington limit:
+\begin{equation}
+	\label{eq:tidbits:2} \dot{M}_{\mathrm{crit}} = \frac{L_{\mathrm{Edd}}R_*}{2\eta GM} = 1.5\times 10^{18}\left(\frac{R_*}{3\ \mathrm{km}}\right)\left(\frac{\eta}{0.1}\right)^{-1}\ \mathrm{g\ s^{-1}}
+\end{equation}
+where $\eta$ is the radiative efficiency of the flow. The ratio of the height to the radius, though, is
+\begin{equation}
+	\label{eq:tidbits:3} \frac{H}{R} \sim \frac{3}{4\eta}\frac{\dot{M}}{\dot{M}_{\mathrm{crit}}} \left[1- \left(\frac{R_*}{R}\right)^{1/2}\right]
+\end{equation}
+So as $\dot{M}\to \dot{M}_{\mathrm{crit}}$, $H/R\geq 1$ near $R=2R_*$. At this point, radiation pressure is greater than the thermal pressure.\\
+
+\n Thirdly, we must consider thermal stability. If $T_c \gtrsim 10^4\ \mathrm{K}$ and the disk is optically thin, the cool areas cool more rapidly, leading to large temperature fluctuations, causing the solution to be unstable.\\
+
+\n Finally, we should consider viscous stability. A steady-state flow is stable only if 
+\begin{equation}
+	\label{eq:tidbits:4} \left(\frac{\partial (\nu\Sigma)}{\partial \Sigma}\right) > 0
+\end{equation}
+otherwise the disk becomes unstable.
+% subsection a_few_more_tidbits (end)
+\subsection{More General Flows} % (fold)
+\label{sub:more_general_flows}
+The standard Shakura/Sunyaev Solution thus far has assumed
+\begin{enumerate}
+	\item Viscous energy is radiated where it was produced in the disk
+	\item Gas pressure provides the support
+	\item Motion is purely toroidal
+\end{enumerate}
+We should consider a more general situation where \textbf{advection} is allowed. Advection it hte transport of energy  and mass in bulk by large-scale motions in a fluid, whereas convection is flow when diffusive and advective motions are important.\\
+
+\n Now if the fluid can carry thermal energy inward (advect it), then the heating per unit volume can be modeled via
+\begin{equation}
+	\label{eq:general:1} q_{\mathrm{adv}} = \underbrace{q_+}_{???}-\underbrace{q_-}_{radiative cooling}
+\end{equation}
+There are three limiting cases here:
+\begin{enumerate}
+	\item $q_{\mathrm{adv}} \ll q_+ - q_-$ (SS disk)
+	\item $q_- \ll q_{\mathrm{adv}}\sim q_+$ Advection-dominated accretion flow(ADAF)
+	\item $q_+ - q_- \approx -q_{\mathrm{adv}}$ (cooling flows in galaxy clusters)
+\end{enumerate}
+ADAF around a black hole may simply advect viscously heated fluid into the black hole. A low radiative efficiency allows a high accretion rate for a given luminosity. For example, Sagittarius A$^*$ (in the galactic center) has a mass of $M_{\mathrm{BH}}\sim 4\times 10^6\ M_\odot$ but a luminosity of only $L\sim 10^{-5}L_{\mathrm{Edd}}$. ADAF allows $\dot{M}\sim 10^{-5}\ M_\odot\ \mathrm{yr^{-1}}$. This is often a better fit to a spectrum than a simple SS disk.\\
+
+\n Here are several features of an advectively dominated accretion flow for $\dot{M}<\dot{M}_{\mathrm{crit}}$
+\begin{itemize}
+	\item Low accretion rates
+	\item Optically thick, different spectra than the blackbody disk
+	\item two temperature plasma. Ions hotter than the electrons, though the two are electrically coupled
+	\item Steep luminosity function ($L\propto \dot{M}^2$ instead of $L\propto M$ for SS)
+\end{itemize}
+% subsection more_general_flows (end)
+% section accretion_disks (end)
 \end{document}
