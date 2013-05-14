@@ -47,6 +47,9 @@
 \contentsline {paragraph}{Anomalous X-Ray Pulsars}{37}{section*.12}
 \contentsline {paragraph}{Soft Gamma-Ray Repeaters}{37}{section*.13}
 \contentsline {paragraph}{MilisecondPulsars / Recycled Pulsars}{38}{section*.14}
+\contentsline {paragraph}{X-Ray Pulsars}{38}{section*.15}
+\contentsline {paragraph}{Pulsar Glitches}{38}{section*.16}
+\contentsline {paragraph}{Neutron Star Cooling}{38}{section*.17}
 \contentsline {section}{\numberline {6}Accretion Disks}{38}{section.6}
 \contentsline {subsection}{\numberline {6.1}Full Shakura/Sunyaev Solution}{39}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}A Few More Tidbits}{40}{subsection.6.2}
