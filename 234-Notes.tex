@@ -1179,11 +1179,158 @@ fancyhdr}
 \section{Accretion Disks} % (fold)
 \label{sec:accretion_disks}
 \textit{Wednesday, May 8, 2013}
-
-\textit{Monday, May 13, 2013}
-Earlier we found that the temperature in the accretion disk varies as
+	To begin talking about accretion disks, we need to first set upa coordinate system. We'll assume cylindrical symmetry where $r$ is the radial coordinate and $\phi$ is the azimuthal angle, and $z$ is the height coordinate along the symmetry axis. Then for a Keplerian disk, the azimuthal velocity is
+	\begin{equation}
+		\label{eq:disk:1} v_\phi = \Omega r = \left(\frac{GM}{r^3}\right)^{1/2} r = \left(\frac{GM}{r}\right)^{1/2} \propto r^{1/2}.
+	\end{equation}
+	Again, this result only applies if matter is falling in roughly cirecular, Keplerian orbits. Thus, different annuli rotate at different speeds, decreasing with increasing radial distance. Though the azimuthal velocity decreases with $r$, the specific angular momentum (angular momentum per unit mass) \emph{increases} with $r$ as
+	\begin{equation}
+		\label{ea:disk:2} \ell = v_\phi r = \left(GMr\right)^{1/2}\propto r^{1/2}
+	\end{equation}
+	So $\ell$ is larger at larger radii and $v$ is smaller. Thus, for a ring of gas to fall in, it must lose $\ell$ and since $\ell_{\mathrm{tot}}$ is conserved, angular momentum must flow out of the disk. That is to say, angular momentum is concentrated in the outer ``rings'' in order to allow the inflow of matter to tighter orbits.\\
+	
+	\n The viscosity between parcels couples the angular momentum transport. Consider two rings of material orbiting at Keplerian orbits. The outer ring, rotating more slowly, \emph{drage} the inner ring, decelerating it, causing it to fall inward. This, in turn, accelerates material in the outer ring and drives it to larger $r$ and larger $\ell$. The net effect is that
+	\begin{center}
+		\fbox{\parbox{5 in}{Angular momentum is transported outward while mass is transported inward, causing the gas to be heated through friction. This heat is loss in situ.}}
+	\end{center}
+	The Virial Theorem tells us that half the binding energy released upon reaching a distance $r$ can be dissipated as local heat. Then the luminosity of the disk is 
+	\begin{equation}
+		\label{eq:disk:3} L_{\mathrm{disk}} = \frac{GM_1\dot{M}}{2R_{\mathrm{in}}} = \frac{1}{2} L_{\mathrm{acc}}
+	\end{equation}
+	where $L_{\mathrm{acc}} = G M_1\dot{M}/R_{\mathrm{in}}$, $M_1$ is the mass of the accreting star, and $R_{\mathrm{in}}$ is the inner radius of the accretion disk. Viscosity is essential for this process. Consider two adjacent fluid layers with a velocity drift (relative difference in azimuthal velocity) $\Delta u$, depicted in Figure~\ref{fig:disk:1}.
+	\begin{figure}
+		\centering
+		\includegraphics[width = 0.6\textwidth]{figures/disk_layers.pdf}
+		\caption{Schematic of a disk layer where viscous transfer is occurring.}
+		\label{fig:disk:1}
+	\end{figure}
+	Molecules will move back and forth between the parcels with velocity $v_y$, transporting the $x$-component of the fluid momentum. This occurs over some lengthscale $\lambda$ depending on $v=v_y$. This is quantified by \textbf{kinematic viscocity}, defining the viscosity to be $\nu\sim \lambda v_y$, which naturally has the units of specific angular momentum. $\lambda$ is the molecular mean free path and $v\sim c_s$ is roughly the sound speed.\\
+	
+	\n It's convenient to quantify the turbulence via the \textbf{Reynolds Number},
+	\begin{equation}
+		\label{eq:disk:4} R_e \equiv \frac{Rv_y}{\nu}
+	\end{equation}
+	($R$ is some characteristic lengthscale). This is the ratio of inertial forces to viscous forces, where $\nu$ is the molecular viscosity. If we plug in actual numbers, we get huge Reynolds number ($>10^{12}$), implying very strong turbulence. Then instead of using the sound speed, the appropriate viscosity might be
+	\begin{equation}
+		\label{eq:disk:5} \nu_{\mathrm{turb}} \sim \lambda_{\mathrm{turb}}v_{\mathrm{turb}}
+	\end{equation}
+	where $\lambda_{\mathrm{turb}}$ is the eddy lengthscale and $v_{\mathrm{turb}}$ is the eddy velocity. If we assume the height of a turbulent eddy is $H$ at any $r$, then the lengthscale is $\lambda_{\mathrm{turb}}\lesssim H$ and $v_{\mathrm{turb}}\lesssim c_s$:
+	\begin{equation}
+		\label{eq:disk:6} \nu = \alpha c_s H
+	\end{equation}
+	This is the Shakura \& Sunyaev (1973) ``solution'', which parameterizes all unknowns into $\alpha$, which is typically in the range of $10^{-3}$ to 1, as determined observationally. Such ``$\alpha$-disks'' must be ``thin''. Now we'll figure out the conditions under which this works well.
+	
+	\subsection{Conditions for a Thin Accretion Disk} % (fold)
+	\label{sub:conditions_for_a_thin_accretion_disk}
+	Supposing that hydrostatic equilibrium support is in the $z-$direction (perpendicular to the plane). HSE tells us
+	\begin{equation}
+		\label{eq:disk:7} \frac{\partial P}{\partial z} = -\frac{GM \rho\sin\theta}{r^2}
+	\end{equation}
+	This is the fraction of the pressure support that supports the material above the \emph{disk}, not from the gravitational source. We can approximate the angular dependence using the small angle approximation as
+	\begin{equation}
+		\label{eq:disk:8} \sin\theta \sim \frac{z}{r}\sim \frac{H}{r} \qquad \Rightarrow \qquad \mathcal{O}\left(\frac{dP}{dr}\right) \sim \frac{P}{H}
+	\end{equation}
+	giving us
+	\begin{equation}
+		\label{eq:disk:9} \frac{P}{H} \approx \frac{GM\rho z}{r^3}
+	\end{equation}
+	Now if the gas is Keplerian, then we have the usual azimuthal velocity, $v_\phi^2 = GM/r$ and so we can use this in our HSE calculation:
+	\begin{align}
+		\label{eq:disk:10} \frac{P}{H} &\approx v_\phi^2 \frac{1}{r^2} \rho H\\
+		\label{eq:disk:11} \frac{P}{\rho} &\approx \frac{v_\phi^2}{r^2}H^2\sim c_s^2\\
+		\label{eq:disk:12} \frac{H}{r} & \approx \frac{c_s}{v_\phi} \sim \frac{1}{\mathrm{mach\ \#}}
+	\end{align}
+	For $H/r\ll 1$, then $c_s \ll v_\phi$, meaning that rotation velocities are much larger than the internal velocities. Thus the internal pressure gradient doesn't inflate the disk. Instead, they are Keplerian with $H/R\lesssim 0.01$.\\
+	
+	\n Now we'd like to understand what the luminosity from such a disk would be in a steady state configuration. We'll integrate the energy dissipation rate as a function of radius, defining a flux density
+	\begin{equation}
+		\label{eq:disk:13} \epsilon = \frac{\mathrm{Energy}}{\mathrm{Area\times time}} = \left[\frac{g}{\mathrm{sec}^3}\right]
+	\end{equation}
+	And so the luminosity would be
+	\begin{equation}
+		\label{eq:disk:14} L = \int_R \epsilon A
+	\end{equation}
+	We'll need to use three things to quantify this result
+	\begin{enumerate}
+		\item Torques: these manifest a different angular velocity versus radius relation $d\Omega/dr$
+		\item Viscosity ($\nu$)
+		\item Surface density ($\Sigma$)
+	\end{enumerate}
+	The energy flux is just 
+	\begin{equation}
+		\label{eq:disk:15} \epsilon = \nu\Sigma \left(\frac{d\Omega}{dr}\right)^2r^2
+	\end{equation}
+	We'll need to know a bit more about the structure of accretion disks in order to dig deeper, into the $\nu\Sigma$ terms, but we'll assume Keplerian flows for $d\Omega/dr$.
+	% subsection conditions_for_a_thin_accretion_disk (end)
+	\subsection{Structure of Accretion Disks} % (fold)
+	\label{sub:structure_of_accretion_disks}
+	For a steady-state disk, the inflow velocity $v_r$ is determined by $\nu$. Conservation of mass implies that the steady-state mass flow through any radius is constant. The accretion rate can be written as
+	\begin{equation}
+		\label{eq:disk:16} \dot{M} = 2\pi r v_r\int \rho(r,z)\,dz = \mathrm{const} = 2\pi r v_r \Sigma(r)
+	\end{equation}
+	where we have used $\Sigma(r) = \int \rho(r,z)\,dz\sim \rho H$. This will come in handy momentarily, but now we calculate the viscous torque acting on a cylindrical surface at radius $r$:
+	\begin{equation}
+		\label{eq:disk:17} G(r) = 2\pi r^3\nu \Sigma \frac{d\Omega}{dr}
+	\end{equation}
+	so the net torque in a small region $\delta r$ at $r$ is just the difference between those two locations:
+	\begin{equation}
+		\label{eq:disk:18} \Delta G = G(r)-G(r+\delta r) = \frac{\partial G}{\partial r}\delta r
+	\end{equation}
+	Such viscous torques must be related to the change of the angular momentum at the a distance $r$:
+	\begin{align}
+		\label{eq:disk:19} G(r) = \frac{dL}{dt} = \frac{d}{dt}(mv_\phi r) &= \dot{M} v_\phi r\\
+		\label{eq:disk:20} & = 2\pi r^2 v_\phi v_r \Sigma(r)\\
+		\label{eq:disk:21} & = 2\pi r^3 \Omega v_r \Sigma(r)
+	\end{align}
+	where we've made use of eq.~\eqref{eq:disk:16} to eliminate the accretion rate. Differentiating this result, we get
+	\begin{equation}
+		\label{eq:disk:22} \frac{dG}{dr} = 2\pi \frac{d}{dr}\left(r^3\Sigma v_r \Omega\right)
+	\end{equation}
+	Integrating this result and equating it to what we found in eq.~\eqref{eq:disk:17}, we get
+	\begin{align}
+		\label{eq:disk:23} G &= 2\pi r^3 \Sigma v_r \Omega + C\\
+		\label{eq:disk:24} 2\pi r^3 \nu \Sigma \frac{d\Omega}{dr} &= 2\pi r^3 \Sigma v_r\Omega + C\\
+		\label{eq:disk:25} \nu \Sigma \frac{d\Omega}{dr} &= \Sigma v_r\Omega + \frac{C}{2\pi r^3}
+	\end{align}
+	$C$ is related to the boundary condition imposed on the orbit (see Longair or Frank, King, and Raine). It ends up being
+	\begin{equation}
+		\label{eq:disk:26} C = -\dot{M}(G_{\mathrm{grav}}M_*r_*)^{1/2}
+	\end{equation}
+	where the quantity in parentheses is $\ell$ at the last (innermost) orbit. If we substitute in for $C$, $\dot{M}$, and suppose $\Omega = \Omega_{\mathrm{K}}$ (the Keplerian result), we get
+	\begin{equation}
+		\label{eq:disk:27} \boxed{\nu\Sigma = \frac{\dot{M}}{3\pi}\left[1-\left(\frac{r_*}{r}\right)^{1/2}\right]}
+	\end{equation}
+	So now that we have $\nu\Sigma$, we can get back to the energy dissipation per unit area, $\epsilon$. If we assume Keplerian orbits again, we know $d\Omega/dr$, so then
+	\begin{align}
+		\label{eq:disk:28} \epsilon &= \nu \Sigma r^2 \left(\frac{d\Omega}{dr}\right)^2\\
+		\label{eq:disk:29} &= \frac{9}{8}\nu \Sigma \frac{GM_*}{r^3}\\
+		\label{eq:disk:30} &= \frac{3G\dot{M} M_*}{4\pi r^3}\left[1-\left(\frac{r_*}{r}\right)^{1/2}\right]
+	\end{align}
+	Now we can integrate this to get the luminosity of the disk again
+	\begin{equation}
+		\label{eq:disk:31} L = \int_{r_*}^\infty \epsilon 2\pi r\,dr = \frac{G\dot{M} M_*}{2r_*}
+	\end{equation}
+	which is pretty much exactly what we said earlier as a result of the Virial theorem. Now if we use the Stefan-Boltzmann law, we can get a temperature profile since $\sigma T^4 = \epsilon$ (remember that $\epsilon$ is essentially a radiative flux). This gives a temperature profile of
+	\begin{equation}
+		\label{eq:disk:32} T(r) = \frac{3GM_*\dot{M}}{8\pi r^3\sigma}\left[1-\left(\frac{r_*}{r}\right)^{1/2}\right]^{1/4}
+	\end{equation}
+	So for $r \gg r_*$, the limiting result is
+	\begin{equation}
+		\label{eq:disk:33} T = T_*\left(\frac{r}{r_*}\right)^{-3/4}
+	\end{equation}
+	where for a white dwarf, we typically find $T_*\sim 4\times 10^4\ \mathrm{K}$ and for neutron stars, $T_*\sim 10^7\ \mathrm{K}$. Note that it is likely wiser to refer to $r_*$ as $r_{\mathrm{inner}}$, since this is also true for black holes. This changes the boundary condition for $C$ to 
+	\begin{equation}
+		\label{eq:disk:34} C\to \beta \dot{M}\left(GM r_{\mathrm{inner}}\right)^{1/2}
+	\end{equation}
+	with $R_{\mathrm{inner}}=6GM/c^2$ for a Schwarzschild black hole.\\
+	
+	% subsection structure_of_accretion_disks (end)
+	
+	
+\n\textit{Monday, May 13, 2013}\\
+\n Earlier we found that the temperature in the accretion disk varies as
 \begin{equation}
-	\label{eq:acc2:1}T_{\mathrm{eff}} \sim R^{-3/4}
+	\label{eq:acc2:1}T_{\mathrm{eff}} \propto R^{-3/4}
 \end{equation}
 At each radius, the intensity of radiation is given by the Planck function
 \begin{equation}
@@ -1199,7 +1346,7 @@ where
 \end{equation}
 is the solid angle subtended by an infinitesimal part of the accretion disk. Expanding this out, we get
 \begin{equation}
-	\label{eq:acc2:4} F_\nu = \frac{4\pi h\nu^3\cos i}{c^2D^2}\int_{r_*}^{r_{\mathrm{out}}} \frac{r\,dr}{\exp\left(\frac{h\nu}{kT(R)}\right)-1}
+	\label{eq:acc2:4b} F_\nu = \frac{4\pi h\nu^3\cos i}{c^2D^2}\int_{r_*}^{r_{\mathrm{out}}} \frac{r\,dr}{\exp\left(\frac{h\nu}{kT(R)}\right)-1}
 \end{equation}
 In the Raleigh-Jeans limit of low photon energies, this reduces to (assuming $\nu \ll kT(R_{\mathrm{out}})/h$) a flux scaling as
 \begin{equation}

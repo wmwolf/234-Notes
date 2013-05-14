@@ -1,56 +1,58 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}What is High Energy Astrophysics?}{3}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}How is the High Energy Sky Different?}{3}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}High Energy Photons}{3}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}History}{4}{subsection.1.4}
-\contentsline {subsection}{\numberline {1.5}X-Ray Spectra and Moseley's Law}{4}{subsection.1.5}
-\contentsline {subsection}{\numberline {1.6}Detectors}{5}{subsection.1.6}
-\contentsline {paragraph}{Gas Proportional Counters}{6}{section*.2}
-\contentsline {paragraph}{Scintillation Counters}{6}{section*.3}
-\contentsline {paragraph}{Solid State}{6}{section*.4}
-\contentsline {subsection}{\numberline {1.7}Radioactivity}{7}{subsection.1.7}
-\contentsline {subsection}{\numberline {1.8}Energetics}{7}{subsection.1.8}
-\contentsline {section}{\numberline {2}Accretion of Astrophysical Plasmas}{8}{section.2}
-\contentsline {subsection}{\numberline {2.1}Spherical Flow onto Compact Objects}{8}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}A More Detailed Calculation}{10}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Interacting Binaries}{14}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Roche Potentials}{15}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Mass Transfer and Effects on Orbits}{17}{subsubsection.2.3.2}
-\contentsline {section}{\numberline {3}White Dwarfs}{17}{section.3}
-\contentsline {subsection}{\numberline {3.1}Observed Properties of WDs}{18}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}White Dwarf Structure}{19}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Equations of State}{19}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Mass-Radius Relation for White Dwarfs}{22}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}The Chandrasekhar Mass}{23}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}White Dwarf Cooling}{24}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Cataclysmic Varaiables}{26}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Classical Novae}{26}{subsubsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.2}Recurrent Novae}{27}{subsubsection.3.5.2}
-\contentsline {subsubsection}{\numberline {3.5.3}Dwarf Novae}{27}{subsubsection.3.5.3}
-\contentsline {subsubsection}{\numberline {3.5.4}Magnetic CVs}{27}{subsubsection.3.5.4}
-\contentsline {subsubsection}{\numberline {3.5.5}General Considerations}{27}{subsubsection.3.5.5}
-\contentsline {section}{\numberline {4}Neutron Stars}{28}{section.4}
-\contentsline {subsection}{\numberline {4.1}Relativistic Caveats}{29}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Neutron Star Structure}{30}{subsection.4.2}
-\contentsline {paragraph}{Atmosphere}{30}{section*.5}
-\contentsline {paragraph}{Outer Crust}{30}{section*.6}
-\contentsline {paragraph}{Inner Crust}{30}{section*.7}
-\contentsline {paragraph}{Outer Core}{30}{section*.8}
-\contentsline {paragraph}{Inner Core}{30}{section*.9}
-\contentsline {subsection}{\numberline {4.3}Superfluidity}{31}{subsection.4.3}
-\contentsline {section}{\numberline {5}X-Ray Binaries}{31}{section.5}
-\contentsline {subsection}{\numberline {5.1}Magnetic Inflows}{32}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Pulsar Spindown}{33}{subsection.5.2}
-\contentsline {paragraph}{Braking Index}{35}{section*.10}
-\contentsline {subsection}{\numberline {5.3}Pulsar Characteristics}{35}{subsection.5.3}
-\contentsline {paragraph}{Magnetars}{37}{section*.11}
-\contentsline {paragraph}{Anomalous X-Ray Pulsars}{37}{section*.12}
-\contentsline {paragraph}{Soft Gamma-Ray Repeaters}{37}{section*.13}
-\contentsline {paragraph}{MilisecondPulsars / Recycled Pulsars}{38}{section*.14}
-\contentsline {paragraph}{X-Ray Pulsars}{38}{section*.15}
-\contentsline {paragraph}{Pulsar Glitches}{38}{section*.16}
-\contentsline {paragraph}{Neutron Star Cooling}{38}{section*.17}
-\contentsline {section}{\numberline {6}Accretion Disks}{38}{section.6}
-\contentsline {subsection}{\numberline {6.1}Full Shakura/Sunyaev Solution}{39}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}A Few More Tidbits}{40}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}More General Flows}{40}{subsection.6.3}
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}What is High Energy Astrophysics?}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}How is the High Energy Sky Different?}{4}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}High Energy Photons}{4}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}History}{5}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}X-Ray Spectra and Moseley's Law}{5}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}Detectors}{6}{subsection.1.6}
+\contentsline {paragraph}{Gas Proportional Counters}{7}{section*.2}
+\contentsline {paragraph}{Scintillation Counters}{7}{section*.3}
+\contentsline {paragraph}{Solid State}{7}{section*.4}
+\contentsline {subsection}{\numberline {1.7}Radioactivity}{8}{subsection.1.7}
+\contentsline {subsection}{\numberline {1.8}Energetics}{8}{subsection.1.8}
+\contentsline {section}{\numberline {2}Accretion of Astrophysical Plasmas}{9}{section.2}
+\contentsline {subsection}{\numberline {2.1}Spherical Flow onto Compact Objects}{9}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}A More Detailed Calculation}{11}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Interacting Binaries}{15}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Roche Potentials}{16}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Mass Transfer and Effects on Orbits}{18}{subsubsection.2.3.2}
+\contentsline {section}{\numberline {3}White Dwarfs}{18}{section.3}
+\contentsline {subsection}{\numberline {3.1}Observed Properties of WDs}{19}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}White Dwarf Structure}{20}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Equations of State}{20}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Mass-Radius Relation for White Dwarfs}{23}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}The Chandrasekhar Mass}{24}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}White Dwarf Cooling}{25}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Cataclysmic Varaiables}{27}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Classical Novae}{27}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Recurrent Novae}{28}{subsubsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.3}Dwarf Novae}{28}{subsubsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.4}Magnetic CVs}{28}{subsubsection.3.5.4}
+\contentsline {subsubsection}{\numberline {3.5.5}General Considerations}{28}{subsubsection.3.5.5}
+\contentsline {section}{\numberline {4}Neutron Stars}{29}{section.4}
+\contentsline {subsection}{\numberline {4.1}Relativistic Caveats}{30}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Neutron Star Structure}{31}{subsection.4.2}
+\contentsline {paragraph}{Atmosphere}{31}{section*.5}
+\contentsline {paragraph}{Outer Crust}{31}{section*.6}
+\contentsline {paragraph}{Inner Crust}{31}{section*.7}
+\contentsline {paragraph}{Outer Core}{31}{section*.8}
+\contentsline {paragraph}{Inner Core}{31}{section*.9}
+\contentsline {subsection}{\numberline {4.3}Superfluidity}{32}{subsection.4.3}
+\contentsline {section}{\numberline {5}X-Ray Binaries}{32}{section.5}
+\contentsline {subsection}{\numberline {5.1}Magnetic Inflows}{33}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Pulsar Spindown}{34}{subsection.5.2}
+\contentsline {paragraph}{Braking Index}{36}{section*.10}
+\contentsline {subsection}{\numberline {5.3}Pulsar Characteristics}{36}{subsection.5.3}
+\contentsline {paragraph}{Magnetars}{38}{section*.11}
+\contentsline {paragraph}{Anomalous X-Ray Pulsars}{38}{section*.12}
+\contentsline {paragraph}{Soft Gamma-Ray Repeaters}{38}{section*.13}
+\contentsline {paragraph}{MilisecondPulsars / Recycled Pulsars}{39}{section*.14}
+\contentsline {paragraph}{X-Ray Pulsars}{39}{section*.15}
+\contentsline {paragraph}{Pulsar Glitches}{39}{section*.16}
+\contentsline {paragraph}{Neutron Star Cooling}{39}{section*.17}
+\contentsline {section}{\numberline {6}Accretion Disks}{39}{section.6}
+\contentsline {subsection}{\numberline {6.1}Conditions for a Thin Accretion Disk}{41}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Structure of Accretion Disks}{42}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Full Shakura/Sunyaev Solution}{44}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}A Few More Tidbits}{45}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}More General Flows}{46}{subsection.6.5}
