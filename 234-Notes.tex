@@ -1197,13 +1197,13 @@ fancyhdr}
 	\begin{equation}
 		\label{eq:disk:3} L_{\mathrm{disk}} = \frac{GM_1\dot{M}}{2R_{\mathrm{in}}} = \frac{1}{2} L_{\mathrm{acc}}
 	\end{equation}
-	where $L_{\mathrm{acc}} = G M_1\dot{M}/R_{\mathrm{in}}$, $M_1$ is the mass of the accreting star, and $R_{\mathrm{in}}$ is the inner radius of the accretion disk. Viscosity is essential for this process. Consider two adjacent fluid layers with a velocity drift (relative difference in azimuthal velocity) $\Delta u$, depicted in Figure~\ref{fig:disk:1}.
-	\begin{figure}
-		\centering
-		\includegraphics[width = 0.6\textwidth]{figures/disk_layers.pdf}
-		\caption{Schematic of a disk layer where viscous transfer is occurring.}
-		\label{fig:disk:1}
-	\end{figure}
+	where $L_{\mathrm{acc}} = G M_1\dot{M}/R_{\mathrm{in}}$, $M_1$ is the mass of the accreting star, and $R_{\mathrm{in}}$ is the inner radius of the accretion disk. Viscosity is essential for this process. Consider two adjacent fluid layers with a velocity drift (relative difference in azimuthal velocity) $\Delta u$, depicted in %Figure~\ref{fig:disk:1}.
+	% \begin{figure}
+	% 	\centering
+	% 	\includegraphics[width = 0.6\textwidth]{figures/disk_layers.pdf}
+	% 	\caption{Schematic of a disk layer where viscous transfer is occurring.}
+	% 	\label{fig:disk:1}
+	% \end{figure}
 	Molecules will move back and forth between the parcels with velocity $v_y$, transporting the $x$-component of the fluid momentum. This occurs over some lengthscale $\lambda$ depending on $v=v_y$. This is quantified by \textbf{kinematic viscocity}, defining the viscosity to be $\nu\sim \lambda v_y$, which naturally has the units of specific angular momentum. $\lambda$ is the molecular mean free path and $v\sim c_s$ is roughly the sound speed.\\
 	
 	\n It's convenient to quantify the turbulence via the \textbf{Reynolds Number},
@@ -1447,7 +1447,7 @@ We should consider a more general situation where \textbf{advection} is allowed.
 
 \n Now if the fluid can carry thermal energy inward (advect it), then the heating per unit volume can be modeled via
 \begin{equation}
-	\label{eq:general:1} q_{\mathrm{adv}} = \underbrace{q_+}_{???}-\underbrace{q_-}_{radiative cooling}
+	\label{eq:general:1} q_{\mathrm{adv}} = \underbrace{q_+}_{???}-\underbrace{q_-}_{\rm radiative\ cooling}
 \end{equation}
 There are three limiting cases here:
 \begin{enumerate}
@@ -1466,4 +1466,56 @@ ADAF around a black hole may simply advect viscously heated fluid into the black
 \end{itemize}
 % subsection more_general_flows (end)
 % section accretion_disks (end)
+
+\section{Active Galactic Nuclei} % (fold)
+\label{sec:active_galactic_nuclei}
+Active Galactic Nuclei (AGNs) are extremely luminous extragalactic sources powered by supermassive black holes in galactic centers. Observationally, we see the following characteristics
+	\begin{enumerate}
+		\item One highly non-thermal spectrum radiation from radio all the way to TeV energies. 
+		\item Jets which expel energy in two opposite directions
+		\item Highly compact ($\lesssim 3\ \mathrm{pc}$), which indicates luminous centers
+		\item Strong emission lines
+		\item Strong UV emission (including Lyman $\alpha$ lines)
+		\item Jets may produce bright radio lobes when material collides with slower moving IGM (e.g.\ Cygnus A)
+		\item Rapid variability ($\sim$ minutes and longer timescales) on all frequencies
+		\item Broad emission from a central source (broad lines, that is).
+	\end{enumerate}
+	There is a lot of different types of AGN, giving rise to a strange taxonomy which we now discuss
+	\subsection{Taxonomy} % (fold)
+	\label{sub:taxonomy}
+	Due to historical silliness, AGNs have a complex and largely disconnected set of names. These include quasars, radio galaxies, seyfert galaxies, blazars, and others. We'll go through each of these
+	\subsubsection{Quasars} % (fold)
+	\label{ssub:quasars}
+	Originally called ``radio stars'', these are bright radio sources at cosmic distances that appears to be as small as a star. The nature of these objects was puzzling for a long time. We now understand them to be luminous galaxie swith compact centers. Luminosities lie in the range of $L\sim 10^{45}-10^{49}\ \mathrm{erg\ s^{-1}}$. Around 10 percent of quasars have strong radio emission; these are called ``radio loud''.
+	% subsubsection quasars (end)
+	\subsubsection{Radio Galaxies} % (fold)
+	\label{ssub:radio_galaxies}
+		Radio galaxies look like typical elliptical galaxies but have $L_{\mathrm{radio}}\geq 3\times 10^{41}\ \mathrm{erg\ s^{-1}}$. A typical galaxy only has $L_{\mathrm{radio}}\sim 10^{39}\ \mathrm{erg\ s^{-1}}$, which comes nearly entirely from supernova remnants. In radio galaxies, the large source of radio emission comes from giant radio lobes.\\
+		
+		\n Faneroff \& Riley further categorized radio galaxies into subtypes. Type I (FRI) are radio galaxies that are bright close to the center of the galaxy with $L_{15\ \mathrm{GHz}}\lesssim 10^{32}\ \mathrm{erg\ s^{-1}\ Hz^{-1}}$. Type II (FRII) have powerful jets with hot spots that have $L_{14\ \mathrm{GHz}} \geq 10^{32}\ \mathrm{erg\ s^{-1}\ Hz^{-1}}$. The difference between these two types are thought to be the supersonic jets found in FRII's.
+	% subsubsection radio_galaxies (end)
+	\subsubsection{Seyfert Galaxies} % (fold)
+	\label{ssub:seyfert_galaxies}
+	Seyfert galaxies are spiral galaxies with very bright, unresolved cores. We see strong emission lines from highly ionized states, like CIII, CIV, MgII, H$\gamma$, and Lyman $\alpha$. Luminosities lie in the range of $L\sim 10^{43}-10^{45}\ \mathrm{erg\ s^{-1}}$, and these galaxies are typically radio quiet. There are subclasses for these objects as well. Sey I galaxies have broad permitted hydrogen lines, whereas Sey II galaxies only exhibit weak ones. Additionally, Seyfert galaxies are more likely than your average galaxy to be undergoing a merger.
+	% subsubsection seyfert_galaxies (end)
+	\subsubsection{Blazars} % (fold)
+	\label{ssub:blazars}
+	Blazars have polarized nonthermal emission (synchrotron and friends). They have large X-ray and $\gamma$-ray fluxes. These, too, can be classified as radio-loud and radio-quiet. We define the radio loudness via
+	\begin{equation}
+		\label{eq:blazar:1} R_L \equiv \log\left(\frac{F_{5\ \mathrm{GHz}}}{F_{\nu,\mathrm{bolometric}}}\right)
+	\end{equation}
+	where $F_\nu$ is the energy flux density per unit frequency. For $R_L>1$, a blazar is radio loud (about 10-15\% of blazars), and for $R_L<1$, we say the blazar is radio quiet (85-90\%).	
+	% subsubsection blazars (end)
+	\subsubsection{Optical Classification} % (fold)
+	\label{ssub:optical_classification}
+	We also classify AGNs via their optical emission. Type I AGNs have a strong continuum  with broad and narrow emission lines. Type II AGNs exhibit a weak continuum and only weak narrow lines.
+	% subsubsection optical_classification (end)
+	% subsection taxonomy (end)
+	\subsection{The Unified Model of AGNs} % (fold)
+	\label{sub:the_unified_model_of_agns}
+	After these initial observations, we have developed a unified model that asserts that each of these different objects is more or less the same, but we are viewing them at varying angles. If we look straight down a jet, we see a blazar. A little off of the jet, and we see a quasar. At even more oblique angles, we see radio galaxies. For radio quiet objects, the same picture applies, with radio quiet quasars observed at small angles, and Seyfert galaxies at larger angles. There is an obscuring torus that hides the interior of the AGN at large inclination angles.
+	
+	% subsection the_unified_model_of_agns (end)
+
+% section active_galactic_nuclei (end)
 \end{document}
