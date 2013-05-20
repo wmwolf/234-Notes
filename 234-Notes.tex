@@ -1516,6 +1516,126 @@ Active Galactic Nuclei (AGNs) are extremely luminous extragalactic sources power
 	After these initial observations, we have developed a unified model that asserts that each of these different objects is more or less the same, but we are viewing them at varying angles. If we look straight down a jet, we see a blazar. A little off of the jet, and we see a quasar. At even more oblique angles, we see radio galaxies. For radio quiet objects, the same picture applies, with radio quiet quasars observed at small angles, and Seyfert galaxies at larger angles. There is an obscuring torus that hides the interior of the AGN at large inclination angles.
 	
 	% subsection the_unified_model_of_agns (end)
+	\subsection{Feeding the Monster} % (fold)
+	\label{sub:feeding_the_monster}
+	\emph{Monday, May 20, 2013}\\
+	
+	\n Different sources can feed the central black hole in an AGN. We'll briefly discuss two of them here
+	\begin{enumerate}
+		\item[(a)] \textbf{Stars}: Orbits on  the black hole path are quickly removed from the ``loss cone''. These stars would be replenished by the star-star interactions in clusters around the black hole. This probably only accounts for $10^{-5}$ to $10{-6}$ $M_\odot$/yr, though, so stars are essentially a negligible component in the black hole's feeding regimen.
+		\item[(b)] \textbf{Gas}: Accretion may be triggered by the inflow associated with galactic mergers, as AGNS seem to be correlated with mergers.
+	\end{enumerate}
+	How do we estimate the mass of the central black hole is an AGN? We have observed that the black hole mass is correlated with the $B$-band intensity and the velocity dispersion in the bulge. A rough scaling relation is
+	\begin{equation}
+		\label{eq:feed:1} M_{\mathrm{BH}} = 8\times 10^7\ M_\odot\left(\frac{L_{\mathrm{B,bulge}}}{10^{10}L_?}\right)^{1.03}
+	\end{equation}
+	where
+	\begin{equation}
+		\label{eq:feed:2} L_? = 5.2\times 10^{32}\ \mathrm{erg\ s^{-1}}
+	\end{equation}
+	In terms of the velocity distribution, we get
+	\begin{equation}
+		\label{eq:feed:3} M_{\mathrm{BH}} = 1.66\times 10^8\ M_\odot\left(\frac{\sigma}{200\ \mathrm{km\,s^{-1}}}\right)^{4.86}
+	\end{equation}
+	We can also characterize the accretion disk at about $100-1000\,R_{\mathrm{Sch}}$ for accretion rates in the range of $\dot{M}\sim 0.01-1\ \dot{M}_{\mathrm{Edd}}$. The temperature profile behaves like
+	\begin{equation}
+		\label{feed:4} T(r) = 6.3\times 10^5\ \mathrm{K}\ \left(\frac{\dot{M}}{\dot{M}_{\mathrm{Edd}}}\right)^{1/4} \left(\frac{M_{\mathrm{BH}}}{10^8\ M_\odot}\right)^{-1/4}\left(\frac{r}{R_{\mathrm{Sch}}}\right)^{-3/4}
+	\end{equation}
+	$T\propto \dot{M}^{1/4}$ because the radiative energy transport is proportional to $T^4$ and the dissipated energy is proportional to $\dot{M}$. So this is related to the big blue bump in the UV, so higher energy radiation must be nonthermal. We believe this to be due to upscattering of UV photons in shocks.\\
 
+	\n We have observed MeV photons, implying that pair-production occurs near the black hole with energies $\sim 2m_ec^2$, and we see radiation from different components of the AGN.
+	
+	% subsection feeding_the_monster (end)
+	\subsection{Broad Line Region} % (fold)
+	\label{sub:broad_line_region}
+	We see strong emission from decay after photoionization. Line widths are due to the bulk motions of material, which in AGNs can approach $10^4\ \mathrm{km\,s^{-1}}$, or $v/c\sim 1/30$. Such material must be within $\sim 500\,R_{\mathrm{Sch}}\leq \mathrm{pc}$. In clouds, radiative decay produces a line, or they can be collisionally de-excited. At an electron number density of $n_e \approx 10^9-10^{10}\,\mathrm{cm^{-3}}$, the volume filling factor is only $10^{-6}-10^{-5}$ and a total mass of a few $M_\odot$. Typically the cloud sizes are of the order of $10^{11}\,\mathrm{cm}$. For instance the Seyfert 1 galaxy NGS 5548 has a 50 day line delay for H$\beta$ to respond to changes in the ???
+	% subsection broad_line_region (end)
+	\subsection{Narrow Line Region} % (fold)
+	\label{sub:narrow_line_region}
+	We also observe line widths of $200-2000\,\mathrm{km\,s^{-1}}$ in forbidden lines. As a reminder, forbidden lines are transitions that are disfavored by standard quantum mechanical arguments, so their decay times are very long. Thus, they can only occur in very underdense regions. In these emitting regions, we have a number density of $n\sim 10^2-10^4\,\mathrm{cm^{-3}}$. So these are not collisionally de-excited. The narrow line region is spatially resolved in some Seyferts and extends about $50\,\mathrm{kpc}-200\,\mathrm{kpc}$. The volume filling factor is around $10^{-6}$ with a total mass of $M_{\mathrm{tot}}\sim 10^6\,M_\odot$ and temperatures in the range of $T\sim 10,000-25,000\,\mathrm{K}$, which arises from [SOMETHING] perpendicular to the disk.
+	% subsection narrow_line_region (end)
+	\subsection{Molecular Torus} % (fold)
+	\label{sub:molecular_torus}
+	We observe an IR bump in the QSO spectra where absorption and re-emission radiate from a central source. This dusty region has a temperature in the range of $20-80\,\mathrm{K}$ at 50- 150\,$\mu$m. The luminosity coming from this torus is then approximately given by
+	\begin{equation}
+		\label{eq:torus:1} L_{\mathrm{IR}} = 2\pi R_{\mathrm{dust}}^2 \sigma T_{\mathrm{dust}}^4
+	\end{equation}
+	so we can back out a radius from a temperature measurement via
+	\begin{equation}
+		\label{eq:torus:2} R_{\mathrm{dust}} \sim 0.4\,\mathrm{pc}\left(\frac{L_{\mathrm{IR}}}{10^{46}\,\mathrm{erg\,s^{-1}}}\right)^{1/2}\left(\frac{T_{\mathrm{dust}}}{20\,\mathrm{K}}\right)^{-2}
+	\end{equation}
+	% subsection molecular_torus (end)
+	\subsection{Jets} % (fold)
+	\label{sub:jets}
+	The jets we observe from AGNs are collimated outflows from the central accretion disk. They are very radio bright and move at $v\sim c$ with Lorentz factor son the order of $\gamma = (1-v^2/c^2)^{1/2}\sim 30$. Due to the geometry of a jet pointing near us, these can cause the motion of jet blobs to appear superluminal. Using the standard notation of $\beta\equiv v/c$, we can talk about the effect of Doppler beaming. $I_\nu/\nu^3$ is a Lorentz invariant (this will be useful). The [relativistic] Doppler formula give us an observed frequency of light via
+	\begin{equation}
+		\label{eq:jets:1} \nu_{\mathrm{obs}} = \frac{\sqrt{1-\beta^2}}{\underbrace{1+\beta\cos\theta}_D}
+	\end{equation}
+	Then the observed spectral intensity is
+	\begin{equation}
+		\label{eq:jets:2} I_\nu^{\mathrm{obs}} (D\nu) = D^3 I_\nu^{\mathrm{em}}(\nu)
+	\end{equation}
+	For jets with $\gamma \approx 4$, ($\beta \approx 0.97$), then $D^3\sim 1000$. Thus jets coming \emph{at} us are beamed by a factor of 1000, where as those moving away from us are diminished by the same factor.\\
+	
+	\n The radiation from jets is primarily synchrotron which usually follows a power law of the form
+	\begin{equation}
+		\label{eq:jets:3} I_\nu^{\mathrm{em}} \propto \nu^{-\alpha}
+	\end{equation}
+	So the intensity at some frequency transforms via
+	\begin{equation}
+		\label{eq:jets:4} I_{\nu}^{\mathrm{obs}}=D^{3+\alpha}I_\nu^{\mathrm{em}}
+	\end{equation}
+	So the power law structure is preserved with the same slope but different intensity.\\
+	
+	\n The jets are often well-collimated, which begs the question of how they get that way. A classic model is the ``Twin Exhaust Model'' put forth by Blandford and Rees (1974). Here the outflow corms constant mass injection rate into an outer medium at some pressure $P$ that decreases with the disk radius. A problem with this model is that the pressure at the source needs to be huge. \\
+	
+	\n The ``Pinch Effect'' is another explanation invoking magnetic fields. If there is a current along the jet  axis, it predicts a toroidal magnetic field that continues the jet. A big problem is that jets would probably suffer a kink, causing a Kelvin-Helmholtz instability (the model is fine for a perfectly straight jet with perfect symmetry).\\
+	
+	\n In simulations using relativistic magnetohydrodynamics, a shocked jet ???? that flows back and helps to collimate the jets. \\
+	
+	\n [MISSING SOME MORE BAD EXPLANATIONS: HYDRODYNAMIC]\\
+	
+	\n A hydromagnetic model put forty by Blandford and Payne evokes magnetic fields that are anchored to the disk which spiral around the $z$-axis, confining the plasma along the field lines. 
+	
+	% subsection jets (end)
+	\subsection{Radiation from Jets and Lobes} % (fold)
+	\label{sub:radiation_from_jets_and_lobes}
+	For example, in Cyg A, the luminosity from the radio lobes is $L\sim 10^{11}L_\odot$ and the electron density is $n_e \sim 10^{-4}-10^{-3}\,\mathrm{cm^{-3}}$ in the lobe. This is a low enough density that the system doesn't reach a Maxwell-Boltzmann distribution. There is a magnetic field present with $B\sim 10-100\,\mu\mathrm{G}$. The resulting radiation is a power law with index of $\alpha\sim 0.6$. If the radiation is synchrotron, the number density as a function of energy is
+	\begin{equation}
+		\label{eq:jets:5} n(E) \propto E^{-P}
+	\end{equation}
+	where $P = 2\alpha + 1 \approx 2.2$
+	The relativistic electron spectrum comes from synchrotron emission. The electrons are accelerated in hot spots and then lose energy as they diffuse away. Meanwhile, the magnetic field is chaotic in these hot spots. The electrons have power due to synchrotron losses of 
+	\begin{equation}
+		\label{eq:jets:6} \left(\frac{dE}{dt}\right)_{\mathrm{sync}} = \frac{4}{3}\sigma_{\mathrm{T}}c\left(\frac{ E }{ M_e c^2}\right)^2\left(\frac{B^2}{8\pi}\right) = 1.1\times 10^{-15}\,\mathrm{erg\,s^{-1}}\ \gamma^2\left(\frac{B}{G}\right)^2
+	\end{equation}
+	with a loss time of
+	\begin{equation}
+		\label{eq:jets:7} \tau = \frac{E}{dE/dt} = \frac{6\pi m_e^2 c^3}{\sigma_{\mathrm{T}}} B^{-2} E^{-1} = 635\,\mathrm{s}\ \left(\frac{B}{1\ \mathrm{G}}\right)^{-2}\left(\frac{E}{1\,\mathrm{erg}}\right)^{-1}
+	\end{equation}
+	Using the characteristic frequency for synchrotron radiation,
+	\begin{equation}
+		\label{eq:jets:8} \nu_e = \frac{\omega_e}{2\pi} = \frac{eB}{2\pi m_pc}\left(\frac{ E}{m_ec^2}\right)^2 
+	\end{equation}
+	So the synchrotron timescale is
+	\begin{equation}
+		\label{eq:jets:9} \tau_{\mathrm{sync}} = \frac{6(\pi m_e c e)^{1/2}}{2^{1/2}\sigma_{\mathrm{T}}} B^{-3/2} \nu_e^{-1/2}
+	\end{equation}
+	The total energy in the lobes will come from 
+	\begin{equation}
+		\label{eq:jets:10} U_e \approx L_{\mathrm{sync}}\tau_{\mathrm{sync}}
+	\end{equation}
+	The energy in the magnetic field is 
+	\begin{equation}
+		\label{eq:jets:11} U_{\mathrm{mag}} \sim \frac{VB^2}{8\pi}
+	\end{equation}
+	when $V$ is the volume of the source. So the total energy is 
+	\begin{equation}
+		\label{eq:jets:12} U_{\mathrm{mag}} = 1.8\times 10^{63(!)}\left(\frac{V}{\mathrm{kpc}}^3\right)\left(\frac{B}{\mathrm{G}}\right)^2\,\mathrm{erg}
+	\end{equation}
+	This energy is split equally between the particles and the magnetic fields.\\
+	
+	\n Finally, X rays are produced in jets through synchrotron self-comptonization. Photons with a frequency $\nu$ are upscattered to frequencies $\nu' \propto \gamma^2\nu$ after scattering off of an electron with lorentz factor $\gamma$ (with typical values of $\gamma\sim 10^4$).
+	% subsection radiation_from_jets_and_lobes (end)
 % section active_galactic_nuclei (end)
 \end{document}
