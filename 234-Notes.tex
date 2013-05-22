@@ -1638,4 +1638,90 @@ Active Galactic Nuclei (AGNs) are extremely luminous extragalactic sources power
 	\n Finally, X rays are produced in jets through synchrotron self-comptonization. Photons with a frequency $\nu$ are upscattered to frequencies $\nu' \propto \gamma^2\nu$ after scattering off of an electron with lorentz factor $\gamma$ (with typical values of $\gamma\sim 10^4$).
 	% subsection radiation_from_jets_and_lobes (end)
 % section active_galactic_nuclei (end)
+\section{Supernovae} % (fold)
+\label{sec:supernovae}
+\emph{Wednesday, May 22, 2013}\\
+
+	\n Supernovae are among the most energetic events we see in the cosmos. Since their initial discovery, they have developed a somewhat convoluted classification scheme (first developed by Bonde \& Zwicky when they realized that supernovae were particularly special ``novae'' events), being broadly separated into type I and type II with further subdivisions:
+	\begin{enumerate}
+		\item Type I: No Hydrogen in spectra
+		\begin{enumerate}
+			\item Type Ia: Strong Silicon and intermediate elements, thermonuclear events. A white dwarf explodes in a binary system, leaving nothing behind. 
+			\item Type Ib: Helium found in spectrum. Core collapse of a massive star that has lost its Hydrogen.
+			\item Type Ic: No Helium found in spectrum. Core collapse of a massive star that has undergone significant mass loss
+		\end{enumerate}
+		\item Type II: Hydrogen in spectra. Core collapse of a massive star.
+	\end{enumerate}
+	Supernovae exhibit a range of luminosities spanning $M_B\sim$ -22 to -14 with most in the range of -19.5 to -17. Type Ia supernovae (SNeIa) are more typically around -19.5 whereas core collapse supernoave are about 1.5 magnitudes dimmer. At peak, their luminosities are comparable to their entire host galaxy $\sim 10^{10}L_\odot$. If their color and temperature were the same as the sun, we would expect the area of the supernova emitting surface to be again $10^{10}$ times greater than the area of the sun. However, supernovae are typically about two time hotter than the sun, so the radius of the photosphere is more like twenty times the radius of the largest red supergiant.\\
+	
+	\n For a supernova emitting at $L\sim 10^{10}\,L_\odot$ for a few weeks, the radiated energy is $E_{\mathrm{rad}}\approx 8\times 10^{49}\,\mathrm{erg}$. In reality, this is more like $\sim 10^{49}\,\mathrm{erg}$. Supernovae undergo homologous expansion. This is where the velocity of the ejecta is proportional to the radius. As a result, there is no pressure gradient supporting the ejected material. To get a grasp on what sorts of velocities are observed, typical values give
+	\begin{equation}
+		\label{eq:sne:1} v\sim \frac{R_{\mathrm{SN,peak}}}{t_{\mathrm{peak}}} \sim \frac{2\times 10^{15}\,\mathrm{cm}}{2\times 10^6\,\mathrm{s}} \sim 10^9\,\mathrm{cm\,s^{-1}} \sim 10^4\,\mathrm{km\,s^{-1}}
+	\end{equation}
+	Then the kinetic energy in the supernova is approximately
+	\begin{equation}
+		\label{eq:sne:2} E_{\mathrm{KE}} \sim \frac{1}{2}mv^2 \sim 10^{33}\,\mathrm{g}\left(10^{18}\,\mathrm{cm^2\, s^{-2}}\right) \sim 10^{51}\,\mathrm{erg} = 1\,\mathrm{f.o.e.} = 1\,\mathrm{Bethe}
+	\end{equation}
+	this figure is more or less the same for core collapse SNe (SNecc) and SNeIa. We've looked at the radiating energy and the kinetic energy in a supernova, but what is the actual total energy? For a core SNcc, the energy budget is the difference in the binding energies of the degenerate core and the resulting neutron star. Since that of the neutron star is so much larger, we can just ignore the binding energy of the original degenerate core and get
+	\begin{equation}
+		\label{eq:sne:3} E_{\mathrm{grav}} \sim \frac{GM^2}{R_{\mathrm{NS}}} = 5\times 10^{53} \left(\frac{M}{1.4\,M_\odot}\right)^2 \left(\frac{R_{\mathrm{NS}}}{10\,\mathrm{km}}\right)^{-1}\,\mathrm{erg}
+	\end{equation}
+	So we appear to have \emph{a lot} of energy left over that isn't radiated or converted to kinetic energy. The rest goes into neutrinos. For example SN 1987A provided 20 anti-electron neutrino detections. These are measured when they interact with a proton, giving off a neutron and a positron. The positron then gives off Cerenkov radiation which is detected. Incoming neutrinos have energies of $\sim 20\,\mathrm{MeV}$. The fluence (corrected for efficiency) is approximately 
+	\begin{equation}
+		\label{eq:sne:4} S_{\bar{\nu}_e}\sim 20\times 10^{9} \mathrm{cm^{-2}}
+	\end{equation} 
+	The total energy in neutrinos is then
+	\begin{equation}
+		\label{eq:sne:5} E_\nu = S_{\bar{\nu}_e} 4\pi d_{\mathrm{LMC}}^2(\varepsilon_\nu) \sim 1.1\times 10^{53}\,\mathrm{erg}
+	\end{equation}
+	so it appears that neutrinos do indeed make up the majority of the energy budget. The ordering of the energies is then
+	\begin{equation}
+		\label{eq:sne:6} E_{\rm grav} > E_{\nu} > E_{\mathrm{KE}} > E_{\mathrm{rad}}
+	\end{equation}
+	with $E_\nu \sim 10^{53}\,\mathrm{erg}$, $E_{\mathrm{KE}}\sim 10^{51}\,\mathrm{erg}$, and $E_{\mathrm{rad}}\sim 10^{49}\,\mathrm{erg}$.
+	\subsection{Core Collapse Supernovae} % (fold)
+	\label{sub:core_collapse_supernovae}
+	A core-collapse supernova (SNcc) is the collapse of the core of a massive star ($M>8M_\odot$). After an $O$ or $B$ type star moves to the giant branch, it moves back and forth in the H-R diagram as different nuclear fuels are exhausted, creating an ``onion skin'' shellular structure. As more and more massive nuclei are fused, the timescales decrease, as shown in Table~\ref{tab:sne:1}.\\
+	\begin{table}
+		\centering
+		\begin{tabular}{l l}
+			Nucleus & Burning Timescale\\
+			\hline\hline
+			H & $5\times 10^6\,\mathrm{yr}$\\
+			He & $t\times 10^5\,\mathrm{yr}$\\
+			C & 500 yr\\
+			Ne & 1 yr\\
+			Si & 1 day 
+		\end{tabular}
+		\caption{Approximate burning timescales for a 25 $M_\odot$ star. After the core is made of iron, there is no more energetically favorable nuclei, so burning stops.}
+		\label{tab:sne:1}
+	\end{table}
+	
+	\n Different structures at the time of core collapse give different types of SNe. At 10-100 $R_\odot$, a red supergiant gives a common type II-P (p for `plateau'), which rises relatively rapidly and then decays over hundreds of days at nearly constant luminosity. At a few tens of $R_\odot$, a blue supergiant gives a type II-pec (for peculiar) supernova, which has a secondary bump in its light curve. At just a few $R_\odot$, the star is a Wolf-Rayet star or in a binary, and its hydrogen and possibly helium have been stripped, producing a type Ib/c supernova.\\
+	
+	\n In the core, Si has fused to Fe at the point of collapse. The reason this happens is because there are no more energetically favorable nuclear reactions. Fusing Fe to larger nuclei requires more energy than it releases, so fusion ceases. Photodisintegration in the core then breaks apart nuclei down to protons and neutrons and robs it of energy and pressure, causing a contraction, which then increases the photodisintegration rate. The result is to decrease the energy by $1.4\times 10^{-5}\,\mathrm{erg\ nucleon^{-1}}$. Integrating this over the whole core, we get $E_{\mathrm{dis}}\sim 2.3\times 10^{52}\,\mathrm{erg}$.\\
+	
+	\n Removing this energy from the plasma also reduces the pressure. Along with the contraction of the core, the Fermi energy of the electrons rises, eventually surpassing $E_F > 1.3\,\mathrm{MeV} = \left(m_{\mathrm{n}} - m_{\mathrm{p}}\right)c^2$. This triggers neutronization:
+	\begin{equation}
+		\label{eq:sne:7} e^- + p \to n+ \nu_e
+	\end{equation}
+	Such electron capture then reduces the degeneracy pressure that was provided by the now-defunct electrons. This is a runaway process that results in the collapse of the core under practically free-fall conditions at the timescale
+	\begin{equation}
+		\label{eq:sne:8} \tau_{\mathrm{ff}} = \left(\frac{3\pi}{32 G\rho}\right)^{1/2} \sim 0.1\,\mathrm{s}
+	\end{equation}
+	at a density of $\rho\sim 10^{7}\,\mathrm{g\,cm^{-3}}$.\\
+	
+	\n The typical neutrino energy can be estimated via
+	\begin{equation}
+		\label{eq:sne:9} \frac{E_{\mathrm{\nu}}}{m_ec^2} = \frac{E_\mathrm{F}}{m_ec^2} = \frac{p_{\mathrm{F}}}{m_ec} = \left(\frac{3}{8\pi m_p}\right)^{1/3}\frac{h}{m_ec}\left(\frac{\rho}{\mu_e}\right)^{1/3} \sim 10^{-2}\left(\frac{\rho}{\mu_e}\right)^{1/3}
+	\end{equation}
+	Remember that the rest energy of an electron is $m_ec^2\sim 511\,\mathrm{keV}$.  So for a density of $\rho\sim 2\times 10^{13}\,\mathrm{g\,cm^{-3}}$, neutrinos have energies of around 10 MeV. Since there are around $10^{57}$ nucleons, the capture energy is [GETTING SHIFTY HERE]
+	\begin{equation}
+		\label{eq:sne:10} E_{\mathrm{capture}} \sim 10^{37}\left(10\,\mathrm{MeV} \times 1.6\times 10^{-6}\,\mathrm{erg\,MeV^{-1}}\right) = 2\times 10^{52}\,\mathrm{erg}
+	\end{equation}
+	This is carried by the ``neutronizing'' neutrinos. We'd expect this to happen in about 0.1 seconds, but in reality it's more like 10 seconds. This is because the densities are so high that the mean free path of neutrinos is shorter than the size of the star. When the core reaches nuclear densities, neutron drip pressure halts the collapse at a radius of $R\sim 15\,\mathrm{km}$ and a core mass of $M_{\mathrm{core}}\sim 1.4\,M_\odot$. This causes a bounce that drives a shock into the envelope.\\
+	
+	\n This bounce shock forms at $r\sim 20-30\,\mathrm{km}$. It has to plow through several tenths of $M_\odot$ of infalling material. The energy goes into photodisintegration of that material, stalling the shock about 10 ms after the bounce at around $100-200\,\mathrm{km}$. This forms a stationary accretion shock.
+	% subsection core_collapse_supernovae (end)
+% section supernovae (end)
 \end{document}
