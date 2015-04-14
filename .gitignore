@@ -3,5 +3,5 @@
 *.log
 *.out
 *.pdfsync
-*.syntex.gz
+*.synctex.gz
 *.toc
